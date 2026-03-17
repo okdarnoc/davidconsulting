@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AML/CFT Compliance Guidelines for SFC and IA Licensees in Hong Kong | David Licence Consulting</title>
+    <meta name="description" content="Comprehensive AML/CFT compliance guide for Hong Kong SFC and IA licensees. Covers CDD, EDD, ongoing monitoring, STR reporting, training, penalties, and practical implementation tips.">
+    <meta name="keywords" content="AML CFT Hong Kong, anti-money laundering, counter terrorist financing, SFC AML, IA AML, CDD, EDD, suspicious transaction report, STR, AMLO, compliance Hong Kong">
+    <meta name="author" content="David Licence Consulting">
+    <meta property="og:title" content="AML/CFT Compliance Guidelines for SFC and IA Licensees in Hong Kong">
+    <meta property="og:description" content="Essential guide to anti-money laundering and counter-terrorist financing compliance for Hong Kong licensed financial firms.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://davidconsulting.com/blog/aml-cft-guidelines.html">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://davidconsulting.com/blog/aml-cft-guidelines.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        :root { --primary: #1a3a5c; --primary-light: #2a5a8c; --accent: #c8a951; --text: #333; --text-light: #666; --bg: #f8f9fa; --white: #fff; --border: #e0e0e0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); line-height: 1.8; background: var(--bg); }
+        .blog-header { background: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo a { color: var(--white); text-decoration: none; font-size: 1.4rem; font-weight: 700; }
+        .logo a span { color: var(--accent); }
+        .header-nav { display: flex; align-items: center; gap: 25px; }
+        .header-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+        .header-nav a:hover { color: var(--accent); }
+        .lang-switcher { display: flex; gap: 8px; margin-left: 15px; padding-left: 15px; border-left: 1px solid rgba(255,255,255,0.3); }
+        .lang-switcher button { background: none; border: 1px solid rgba(255,255,255,0.4); color: rgba(255,255,255,0.85); padding: 3px 10px; border-radius: 3px; cursor: pointer; font-size: 0.85rem; transition: all 0.3s; }
+        .lang-switcher button:hover, .lang-switcher button.active { background: var(--accent); border-color: var(--accent); color: var(--primary); }
+        .article-container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+        .article-meta { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
+        .category-tag { background: var(--accent); color: var(--primary); padding: 4px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; }
+        .pub-date, .read-time { color: var(--text-light); font-size: 0.9rem; }
+        .article-title { font-size: 2.2rem; color: var(--primary); margin-bottom: 25px; line-height: 1.3; font-weight: 700; }
+        .article-body { background: var(--white); padding: 45px; border-radius: 12px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+        .article-body h2 { font-size: 1.6rem; color: var(--primary); margin: 35px 0 15px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+        .article-body h3 { font-size: 1.25rem; color: var(--primary-light); margin: 25px 0 12px; }
+        .article-body p { margin-bottom: 16px; text-align: justify; }
+        .article-body ul, .article-body ol { margin: 12px 0 20px 25px; }
+        .article-body li { margin-bottom: 8px; }
+        .key-takeaways { background: linear-gradient(135deg, #f0f4f8, #e8eef5); border-left: 4px solid var(--accent); padding: 25px 30px; border-radius: 0 10px 10px 0; margin: 35px 0; }
+        .key-takeaways h3 { color: var(--primary); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; }
+        .key-takeaways ul { margin-bottom: 0; }
+        .warning-box { background: #fff3cd; border-left: 4px solid #ffc107; padding: 20px 25px; border-radius: 0 8px 8px 0; margin: 25px 0; }
+        .warning-box h4 { color: #856404; margin-bottom: 8px; }
+        .cta-box { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: var(--white); padding: 30px; border-radius: 10px; text-align: center; margin: 40px 0; }
+        .cta-box h3 { color: var(--accent); margin-bottom: 10px; }
+        .cta-box p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+        .cta-box a { display: inline-block; background: #25D366; color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; }
+        .cta-box a:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37,211,102,0.4); }
+        .related-articles { margin-top: 50px; padding-top: 30px; border-top: 2px solid var(--border); }
+        .related-articles h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: 20px; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .related-card { border: 1px solid var(--border); border-radius: 8px; padding: 20px; transition: box-shadow 0.3s, transform 0.3s; }
+        .related-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: translateY(-3px); }
+        .related-card h4 { font-size: 1rem; margin-bottom: 8px; }
+        .related-card h4 a { color: var(--primary); text-decoration: none; }
+        .related-card h4 a:hover { color: var(--accent); }
+        .related-card p { font-size: 0.85rem; color: var(--text-light); }
+        .blog-footer { background: var(--primary); color: rgba(255,255,255,0.7); padding: 30px 20px; text-align: center; margin-top: 60px; }
+        .blog-footer .disclaimer { max-width: 800px; margin: 0 auto 15px; font-size: 0.8rem; line-height: 1.6; }
+        .blog-footer .copyright { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+        .whatsapp-float { position: fixed; bottom: 25px; right: 25px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37,211,102,0.4); z-index: 999; transition: transform 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        @media (max-width: 768px) { .article-title { font-size: 1.6rem; } .article-body { padding: 25px; } }
+    </style>
+</head>
+<body>
+
+<header class="blog-header">
+    <div class="header-inner">
+        <div class="logo"><a href="../index.html">David <span>Licence</span> Consulting</a></div>
+        <nav class="header-nav">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#services">Services</a>
+            <a href="../index.html#contact">Contact</a>
+            <div class="lang-switcher">
+                <button class="active" onclick="switchLang('en')">EN</button>
+                <button onclick="switchLang('zh-hant')">繁</button>
+                <button onclick="switchLang('zh-hans')">简</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="article-container">
+
+    <!-- ENGLISH -->
+    <div class="lang-content active" id="content-en">
+        <div class="article-meta">
+            <span class="category-tag">Compliance</span>
+            <span class="pub-date">Published: 5 March 2026</span>
+            <span class="read-time">18 min read</span>
+        </div>
+        <h1 class="article-title">AML/CFT Compliance Guidelines for SFC and IA Licensees in Hong Kong</h1>
+        <div class="article-body">
+            <p>Anti-Money Laundering (AML) and Counter-Financing of Terrorism (CFT) compliance is a cornerstone of Hong Kong's financial regulatory framework. Both the Securities and Futures Commission (SFC) and the Insurance Authority (IA) impose comprehensive AML/CFT obligations on their licensees. Failure to comply can result in severe penalties, including significant fines, licence suspension or revocation, and criminal prosecution. This guide provides a detailed overview of the AML/CFT requirements applicable to SFC and IA licensees, along with practical guidance for implementation.</p>
+
+            <h2>1. AML/CFT Regulatory Framework in Hong Kong</h2>
+            <p>Hong Kong's AML/CFT framework is built on several key pieces of legislation and regulatory guidance:</p>
+            <h3>Primary Legislation</h3>
+            <ul>
+                <li><strong>Anti-Money Laundering and Counter-Terrorist Financing Ordinance (AMLO, Cap. 615):</strong> The principal legislation governing AML/CFT obligations for financial institutions and designated non-financial businesses and professions (DNFBPs) in Hong Kong. AMLO establishes the legal requirements for customer due diligence (CDD) and record keeping.</li>
+                <li><strong>Drug Trafficking (Recovery of Proceeds) Ordinance (DTROP, Cap. 405):</strong> Criminalizes money laundering in connection with drug trafficking offences.</li>
+                <li><strong>Organized and Serious Crimes Ordinance (OSCO, Cap. 455):</strong> Extends money laundering offences to all indictable offences and establishes the framework for suspicious transaction reporting.</li>
+                <li><strong>United Nations (Anti-Terrorism Measures) Ordinance (UNATMO, Cap. 575):</strong> Implements UN Security Council resolutions relating to terrorist financing and weapons of mass destruction proliferation financing.</li>
+            </ul>
+            <h3>Regulatory Guidelines</h3>
+            <ul>
+                <li><strong>SFC:</strong> The Guideline on Anti-Money Laundering and Counter-Financing of Terrorism (For Licensed Corporations) provides detailed guidance on how SFC licensees should comply with their AML/CFT obligations.</li>
+                <li><strong>IA:</strong> The Guideline on Anti-Money Laundering and Counter-Financing of Terrorism (For Licensed Insurance Intermediaries) sets out the AML/CFT standards and expectations for IA licensees.</li>
+            </ul>
+            <p>Hong Kong is a member of the Financial Action Task Force (FATF) and is committed to implementing the FATF's internationally recognized standards on AML/CFT. The territory underwent its most recent FATF Mutual Evaluation in 2019, which acknowledged significant progress but also identified areas for improvement.</p>
+
+            <h2>2. SFC AML/CFT Requirements</h2>
+            <p>SFC-licensed corporations are subject to the AMLO's CDD and record-keeping requirements, as well as the SFC's own AML/CFT guidelines. Key obligations include:</p>
+            <ul>
+                <li>Conducting customer due diligence before establishing a business relationship or carrying out occasional transactions above prescribed thresholds</li>
+                <li>Identifying and verifying the identity of customers and beneficial owners</li>
+                <li>Understanding the purpose and intended nature of business relationships</li>
+                <li>Conducting ongoing due diligence and monitoring of business relationships</li>
+                <li>Applying enhanced due diligence (EDD) for higher-risk customers and situations</li>
+                <li>Filing suspicious transaction reports (STRs) with the Joint Financial Intelligence Unit (JFIU)</li>
+                <li>Maintaining adequate records for a minimum of six years</li>
+                <li>Screening customers against sanctions lists</li>
+                <li>Implementing adequate internal policies, controls, and procedures</li>
+                <li>Providing regular AML/CFT training to staff</li>
+            </ul>
+
+            <h2>3. IA AML/CFT Requirements</h2>
+            <p>IA licensees are subject to AML/CFT requirements that are broadly similar to those applicable to SFC licensees, with some insurance-specific considerations:</p>
+            <ul>
+                <li><strong>Scope:</strong> AML/CFT requirements primarily apply to long-term (life) insurance business, as this is considered higher risk for money laundering. However, the IA also expects licensed intermediaries dealing in general insurance to have appropriate AML/CFT measures in place.</li>
+                <li><strong>CDD triggers:</strong> CDD must be conducted when a business relationship is established (e.g., when a long-term insurance policy is sold), when there is a suspicion of money laundering or terrorist financing, and when there are doubts about the accuracy of previously obtained customer identification information.</li>
+                <li><strong>Beneficiary assessment:</strong> For life insurance policies, the beneficiary must be identified and, where the beneficiary is a legal person or arrangement, verified. The risk assessment should consider the beneficiary designation.</li>
+                <li><strong>Claims and payouts:</strong> Appropriate CDD should be conducted at the time of payout or claim settlement, particularly for large payouts.</li>
+            </ul>
+
+            <h2>4. Institutional Risk Assessment</h2>
+            <p>Both SFC and IA licensees are required to conduct an institutional risk assessment (IRA) to identify, assess, and understand the money laundering and terrorist financing (ML/TF) risks to which the firm is exposed. The IRA should be:</p>
+            <ul>
+                <li><strong>Comprehensive:</strong> Cover all aspects of the firm's business, including customer types, products and services, delivery channels, and geographic exposure</li>
+                <li><strong>Documented:</strong> The assessment and its findings must be properly documented and maintained</li>
+                <li><strong>Regularly updated:</strong> The IRA should be reviewed and updated at least annually, or more frequently if there are material changes to the business or the risk environment</li>
+                <li><strong>Approved by senior management:</strong> The IRA should be reviewed and approved by the firm's senior management or board of directors</li>
+            </ul>
+            <h3>Risk Factors to Consider</h3>
+            <ul>
+                <li><strong>Customer risk:</strong> Types of customers served (e.g., politically exposed persons, high-net-worth individuals, corporate entities with complex structures)</li>
+                <li><strong>Product/service risk:</strong> Products or services that may be more susceptible to ML/TF (e.g., investment-linked products, products allowing large cash deposits)</li>
+                <li><strong>Delivery channel risk:</strong> Channels that may increase anonymity (e.g., non-face-to-face business, third-party introductions)</li>
+                <li><strong>Geographic risk:</strong> Countries or regions with higher ML/TF risk (e.g., countries subject to FATF calls for action, countries with inadequate AML/CFT frameworks)</li>
+            </ul>
+
+            <h2>5. Customer Due Diligence (CDD)</h2>
+            <p>CDD is the foundation of any AML/CFT program. The key components of CDD include:</p>
+            <h3>Customer Identification and Verification</h3>
+            <ul>
+                <li><strong>Individual customers:</strong> Obtain and verify the customer's full name, date of birth, nationality, residential address, and unique identification number (e.g., HKID number, passport number). Verification should be conducted using reliable, independent source documents (e.g., government-issued photo ID).</li>
+                <li><strong>Corporate customers:</strong> Obtain and verify the company's name, legal form, proof of existence (e.g., certificate of incorporation), registered address, principal place of business, names of directors, and powers that regulate and bind the company.</li>
+            </ul>
+            <h3>Beneficial Ownership</h3>
+            <p>Identify and take reasonable measures to verify the identity of the beneficial owners of the customer. For companies, this typically means identifying natural persons who ultimately own or control more than 25% of the shares or voting rights, or who otherwise exercise ultimate control over the company.</p>
+            <h3>Purpose and Nature of Business Relationship</h3>
+            <p>Understand the purpose and intended nature of the business relationship. This includes understanding the customer's occupation or business, source of funds, and expected pattern of activity.</p>
+
+            <h2>6. Enhanced Due Diligence (EDD)</h2>
+            <p>EDD measures must be applied in situations that present higher ML/TF risk. Common triggers for EDD include:</p>
+            <ul>
+                <li><strong>Politically Exposed Persons (PEPs):</strong> Customers who are or have been entrusted with prominent public functions, including heads of state, senior politicians, senior government officials, judicial or military officials, senior executives of state-owned enterprises, and important political party officials. EDD requirements extend to the PEP's family members and close associates.</li>
+                <li><strong>Higher-risk countries or territories:</strong> Customers from or transactions involving countries identified by the FATF as having strategic AML/CFT deficiencies</li>
+                <li><strong>Complex or unusual transactions:</strong> Transactions that appear unusually complex or have no apparent economic or lawful purpose</li>
+                <li><strong>Non-face-to-face business:</strong> Relationships established without the customer being physically present</li>
+                <li><strong>Correspondent relationships:</strong> Cross-border correspondent relationships with financial institutions</li>
+            </ul>
+            <h3>EDD Measures</h3>
+            <ul>
+                <li>Obtaining senior management approval for establishing or continuing the business relationship</li>
+                <li>Taking reasonable measures to establish the source of wealth and source of funds</li>
+                <li>Conducting enhanced ongoing monitoring of the business relationship</li>
+                <li>Obtaining additional identification and verification information</li>
+            </ul>
+
+            <h2>7. Ongoing Monitoring</h2>
+            <p>CDD is not a one-time exercise. Licensed firms must conduct ongoing monitoring throughout the life of the business relationship:</p>
+            <ul>
+                <li><strong>Transaction monitoring:</strong> Review transactions to ensure they are consistent with the firm's knowledge of the customer, their business, risk profile, and source of funds. Unusual or suspicious transactions must be identified and investigated.</li>
+                <li><strong>CDD review:</strong> Periodically review and update customer information and CDD records to ensure they remain current and relevant. The frequency of reviews should be risk-based.</li>
+                <li><strong>Sanctions screening:</strong> Screen customers and transactions against applicable sanctions lists (UN, US OFAC, EU, HK), both at onboarding and on an ongoing basis as sanctions lists are updated.</li>
+                <li><strong>PEP screening:</strong> Screen customers to identify politically exposed persons, both at onboarding and periodically thereafter.</li>
+            </ul>
+
+            <h2>8. Suspicious Transaction Reports (STRs)</h2>
+            <p>One of the most critical AML/CFT obligations is the requirement to file Suspicious Transaction Reports (STRs) with the Joint Financial Intelligence Unit (JFIU) of the Hong Kong Police Force and the Customs and Excise Department.</p>
+
+            <div class="warning-box">
+                <h4>Important: Tipping Off</h4>
+                <p>It is a criminal offence under OSCO and DTROP to "tip off" — that is, to disclose to the customer or any other person that an STR has been or will be filed, or that a money laundering or terrorist financing investigation is being or may be conducted. Firms must ensure that their STR filing processes are strictly confidential.</p>
+            </div>
+
+            <h3>When to File an STR</h3>
+            <p>An STR must be filed when a licensed firm knows or suspects, or has reasonable grounds to know or suspect, that any property:</p>
+            <ul>
+                <li>Represents the proceeds of an indictable offence</li>
+                <li>Was used, is being used, or is intended for use in connection with an indictable offence</li>
+                <li>Is terrorist property or is connected to terrorist financing</li>
+            </ul>
+            <h3>Filing Process</h3>
+            <ul>
+                <li>STRs should be filed promptly upon forming the suspicion — there is no prescribed time limit, but unreasonable delay can itself be a compliance failure</li>
+                <li>STRs are filed with the JFIU through its designated channels</li>
+                <li>The firm should maintain internal records of all STRs filed</li>
+                <li>After filing an STR, the firm should not proceed with the transaction unless it receives consent from the JFIU or a specified period has elapsed</li>
+            </ul>
+
+            <h2>9. Record Keeping</h2>
+            <p>Licensed firms must maintain comprehensive records relating to their AML/CFT activities:</p>
+            <ul>
+                <li><strong>CDD records:</strong> Copies of identification documents, verification records, and CDD findings must be retained for at least 6 years after the end of the business relationship</li>
+                <li><strong>Transaction records:</strong> Records of all transactions must be retained for at least 6 years after the date of the transaction</li>
+                <li><strong>STR records:</strong> Records relating to STRs, including internal deliberations and the STR filing itself, must be retained for at least 6 years</li>
+                <li><strong>Training records:</strong> Records of AML/CFT training provided to staff should be maintained</li>
+                <li><strong>Format:</strong> Records may be maintained in electronic or physical form, but must be readily retrievable for inspection by the regulators</li>
+            </ul>
+
+            <h2>10. Training Requirements</h2>
+            <p>Both the SFC and IA require that licensed firms provide adequate AML/CFT training to their staff. Key requirements include:</p>
+            <ul>
+                <li><strong>Initial training:</strong> All new staff must receive AML/CFT training as part of their induction</li>
+                <li><strong>Ongoing training:</strong> Regular refresher training must be provided to all relevant staff, at least annually</li>
+                <li><strong>Content:</strong> Training should cover the firm's AML/CFT policies and procedures, how to identify and report suspicious transactions, CDD requirements, sanctions obligations, and relevant legal provisions</li>
+                <li><strong>Role-specific:</strong> Training should be tailored to the roles and responsibilities of different staff members. Front-line staff who interact with customers will need more detailed training on CDD and identifying suspicious activity.</li>
+                <li><strong>Senior management:</strong> Senior management and the board should also receive appropriate training to understand their oversight responsibilities</li>
+                <li><strong>Records:</strong> The firm should maintain records of all training provided, including attendance, content covered, and dates</li>
+            </ul>
+
+            <h2>11. Penalties for Non-Compliance</h2>
+            <p>The consequences of AML/CFT non-compliance in Hong Kong are severe:</p>
+            <h3>Criminal Penalties</h3>
+            <ul>
+                <li><strong>Money laundering:</strong> Under OSCO and DTROP, the offence of dealing with property known or believed to represent the proceeds of crime carries a maximum penalty of 14 years' imprisonment and a fine of HK$5,000,000</li>
+                <li><strong>Failure to report:</strong> Failing to file an STR when there are reasonable grounds for suspicion is a criminal offence, with a maximum penalty of 3 months' imprisonment and a fine of HK$25,000</li>
+                <li><strong>Tipping off:</strong> Tipping off carries a maximum penalty of 3 years' imprisonment and a fine of HK$500,000</li>
+            </ul>
+            <h3>Regulatory Penalties</h3>
+            <ul>
+                <li><strong>SFC:</strong> The SFC can impose fines of up to HK$10,000,000 or three times the profit gained or loss avoided (whichever is higher) for breaches of AML/CFT requirements. It can also suspend or revoke licences, issue public or private reprimands, and impose conditions on licences.</li>
+                <li><strong>IA:</strong> The IA has similar enforcement powers, including the ability to impose pecuniary penalties, suspend or revoke licences, and take other disciplinary actions against licensees who fail to comply with AML/CFT requirements.</li>
+            </ul>
+
+            <h2>12. Practical Implementation Tips</h2>
+            <p>Based on our experience advising licensed firms on AML/CFT compliance, here are practical tips for effective implementation:</p>
+            <ol>
+                <li><strong>Start with a robust risk assessment:</strong> Your IRA is the foundation of your entire AML/CFT program. Invest time and effort in making it comprehensive and realistic.</li>
+                <li><strong>Adopt a risk-based approach:</strong> Not all customers, products, and geographies present the same level of risk. Allocate your compliance resources proportionally — more resources for higher-risk areas, streamlined processes for lower-risk areas.</li>
+                <li><strong>Invest in technology:</strong> Manual processes are prone to errors and inefficiency. Consider implementing screening software for sanctions and PEP checks, transaction monitoring systems, and electronic CDD management tools.</li>
+                <li><strong>Create a culture of compliance:</strong> AML/CFT compliance should not be viewed as a box-ticking exercise. Build a culture where all staff understand the importance of AML/CFT and feel empowered to raise concerns.</li>
+                <li><strong>Designate a Compliance Officer:</strong> Appoint a senior individual with overall responsibility for AML/CFT compliance. This person should have the authority, resources, and access to senior management necessary to fulfil the role effectively.</li>
+                <li><strong>Document everything:</strong> Regulators place great emphasis on documentation. If it is not documented, it did not happen. Maintain thorough records of all CDD, monitoring, decision-making, and reporting activities.</li>
+                <li><strong>Test your systems regularly:</strong> Conduct periodic reviews and testing of your AML/CFT systems and controls to ensure they are working effectively. Consider engaging independent reviewers or auditors.</li>
+                <li><strong>Stay current:</strong> AML/CFT regulations and guidance evolve constantly. Subscribe to regulatory updates, attend industry seminars, and regularly review and update your policies and procedures.</li>
+                <li><strong>Engage with your peers:</strong> Industry associations and working groups can provide valuable insights into best practices and emerging risks.</li>
+                <li><strong>Seek professional guidance:</strong> If you are unsure about any aspect of your AML/CFT obligations, consult with experienced compliance professionals. The cost of getting it wrong far exceeds the cost of professional advice.</li>
+            </ol>
+
+            <div class="key-takeaways">
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>AML/CFT compliance is a legal obligation under AMLO and a regulatory requirement of both the SFC and IA</li>
+                    <li>Conduct a comprehensive institutional risk assessment as the foundation of your AML/CFT program</li>
+                    <li>Apply CDD at onboarding and conduct ongoing monitoring throughout the business relationship</li>
+                    <li>Apply Enhanced Due Diligence for PEPs, higher-risk countries, and complex transactions</li>
+                    <li>File STRs promptly with the JFIU when suspicions arise; never tip off the customer</li>
+                    <li>Retain all AML/CFT records for at least 6 years</li>
+                    <li>Provide regular AML/CFT training to all staff</li>
+                    <li>Penalties for non-compliance include criminal prosecution, fines up to HK$10M, and licence revocation</li>
+                </ul>
+            </div>
+
+            <div class="cta-box">
+                <h3>Need Help With AML/CFT Compliance?</h3>
+                <p>Our team can help you build and maintain a robust AML/CFT compliance framework. From risk assessments to policy drafting to staff training, we have the expertise to support your compliance needs.</p>
+                <a href="https://wa.me/85262528348">Contact Us on WhatsApp</a>
+            </div>
+
+            <div class="related-articles">
+                <h3>Related Articles</h3>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <h4><a href="compliance-department-setup.html">How to Set Up a Compliance Department</a></h4>
+                        <p>Build an effective compliance function including AML/CFT capabilities.</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="sfc-vs-ia-licensing.html">SFC vs IA: Which Licence Does Your Business Need?</a></h4>
+                        <p>Understand the different regulatory frameworks and their compliance expectations.</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="ia-insurance-broker-licence.html">How to Apply for an Insurance Broker Company Licence</a></h4>
+                        <p>AML/CFT policies are a key component of the IA licence application.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRADITIONAL CHINESE -->
+    <div class="lang-content" id="content-zh-hant">
+        <div class="article-meta">
+            <span class="category-tag">合規</span>
+            <span class="pub-date">發布日期：2026年3月5日</span>
+            <span class="read-time">閱讀時間：18分鐘</span>
+        </div>
+        <h1 class="article-title">香港證監會及保監局持牌人反洗錢/反恐融資合規指引</h1>
+        <div class="article-body">
+            <p>反洗錢（AML）和反恐融資（CFT）合規是香港金融監管框架的基石。證監會和保監局均對其持牌人施加全面的反洗錢/反恐融資義務。不遵守規定可導致嚴重處罰，包括巨額罰款、牌照暫停或撤銷，以及刑事檢控。本指南詳細概述適用於證監會及保監局持牌人的反洗錢/反恐融資要求，並提供實務實施指引。</p>
+
+            <h2>1. 香港反洗錢/反恐融資監管框架</h2>
+            <h3>主要法例</h3>
+            <ul>
+                <li><strong>《打擊洗錢及恐怖分子資金籌集條例》（AMLO，第615章）：</strong>管轄香港金融機構反洗錢/反恐融資義務的主要法例。AMLO確立了客戶盡職調查（CDD）和記錄保存的法律要求。</li>
+                <li><strong>《販毒（追討得益）條例》（DTROP，第405章）：</strong>將與販毒罪行相關的洗錢行為列為刑事罪行。</li>
+                <li><strong>《有組織及嚴重罪行條例》（OSCO，第455章）：</strong>將洗錢罪行擴展至所有可公訴罪行，並建立可疑交易報告的框架。</li>
+                <li><strong>《聯合國（反恐怖主義措施）條例》（UNATMO，第575章）：</strong>實施聯合國安理會有關恐怖分子融資及大規模毀滅性武器擴散融資的決議。</li>
+            </ul>
+            <h3>監管指引</h3>
+            <ul>
+                <li><strong>證監會：</strong>《打擊洗錢及恐怖分子資金籌集指引》（適用於持牌法團）提供證監會持牌人如何遵守反洗錢/反恐融資義務的詳細指引。</li>
+                <li><strong>保監局：</strong>《打擊洗錢及恐怖分子資金籌集指引》（適用於持牌保險中介人）列出保監局持牌人的反洗錢/反恐融資標準和期望。</li>
+            </ul>
+
+            <h2>2. 證監會反洗錢/反恐融資要求</h2>
+            <ul>
+                <li>在建立業務關係或進行超過指定閾值的偶發交易前進行客戶盡職調查</li>
+                <li>識別和核實客戶及實益擁有人的身份</li>
+                <li>了解業務關係的目的和擬定性質</li>
+                <li>對業務關係進行持續盡職調查和監控</li>
+                <li>對較高風險客戶和情況應用加強盡職調查（EDD）</li>
+                <li>向聯合財富情報組（JFIU）提交可疑交易報告（STR）</li>
+                <li>保存記錄最少六年</li>
+                <li>對客戶進行制裁名單篩查</li>
+                <li>為員工提供定期反洗錢/反恐融資培訓</li>
+            </ul>
+
+            <h2>3. 保監局反洗錢/反恐融資要求</h2>
+            <ul>
+                <li><strong>範圍：</strong>反洗錢/反恐融資要求主要適用於長期（人壽）保險業務，因為此類業務被視為洗錢風險較高</li>
+                <li><strong>CDD觸發條件：</strong>在建立業務關係時、懷疑洗錢或恐怖分子融資時，以及對先前獲得的客戶識別資料的準確性存疑時</li>
+                <li><strong>受益人評估：</strong>對於人壽保險保單，必須識別受益人，並在受益人為法人或法律安排時進行核實</li>
+            </ul>
+
+            <h2>4. 機構風險評估</h2>
+            <p>證監會和保監局持牌人均須進行機構風險評估（IRA），以識別、評估和了解公司面臨的洗錢和恐怖分子融資風險。IRA應涵蓋：</p>
+            <ul>
+                <li><strong>客戶風險：</strong>服務的客戶類型（如政治人物、高淨值人士、複雜架構的公司實體）</li>
+                <li><strong>產品/服務風險：</strong>可能較易被利用的產品或服務</li>
+                <li><strong>交付渠道風險：</strong>可能增加匿名性的渠道（如非面對面業務）</li>
+                <li><strong>地域風險：</strong>洗錢/恐怖融資風險較高的國家或地區</li>
+            </ul>
+
+            <h2>5. 客戶盡職調查（CDD）</h2>
+            <h3>客戶識別及核實</h3>
+            <ul>
+                <li><strong>個人客戶：</strong>獲取並核實客戶的全名、出生日期、國籍、住址及獨特識別號碼。應使用可靠、獨立的來源文件進行核實。</li>
+                <li><strong>公司客戶：</strong>獲取並核實公司名稱、法律形式、存在證明、註冊地址、主要營業地點、董事名稱等。</li>
+            </ul>
+            <h3>實益擁有權</h3>
+            <p>識別並採取合理措施核實客戶的實益擁有人身份。對於公司，通常指擁有或控制超過25%股份或投票權的自然人。</p>
+
+            <h2>6. 加強盡職調查（EDD）</h2>
+            <p>在呈現較高風險的情況下必須應用加強盡職調查措施：</p>
+            <ul>
+                <li><strong>政治人物（PEP）：</strong>現正或曾經擔任重要公共職能的客戶，包括國家元首、資深政客、高級政府官員等。EDD要求延伸至PEP的家庭成員和緊密聯繫人。</li>
+                <li><strong>較高風險國家或地區：</strong>來自FATF識別為具有戰略性反洗錢/反恐融資缺陷的國家的客戶</li>
+                <li><strong>複雜或不尋常交易：</strong>表面上異常複雜或無明顯經濟或合法目的的交易</li>
+                <li><strong>非面對面業務：</strong>在客戶未親身在場的情況下建立的關係</li>
+            </ul>
+
+            <h2>7. 持續監控</h2>
+            <ul>
+                <li><strong>交易監控：</strong>審查交易以確保與公司對客戶的認識一致</li>
+                <li><strong>CDD審查：</strong>定期審查和更新客戶資料和CDD記錄</li>
+                <li><strong>制裁篩查：</strong>在入職和持續基礎上對客戶進行制裁名單篩查</li>
+                <li><strong>PEP篩查：</strong>在入職和定期後續時對客戶進行政治人物篩查</li>
+            </ul>
+
+            <h2>8. 可疑交易報告（STR）</h2>
+            <p>最關鍵的反洗錢/反恐融資義務之一是向聯合財富情報組（JFIU）提交可疑交易報告。</p>
+            <div class="warning-box">
+                <h4>重要提示：通風報信</h4>
+                <p>根據OSCO和DTROP，「通風報信」——即向客戶或任何其他人披露已經或將會提交STR，或正在或可能進行洗錢或恐怖融資調查——屬刑事罪行。公司必須確保其STR提交流程嚴格保密。</p>
+            </div>
+            <h3>何時提交STR</h3>
+            <p>當持牌公司知道或懷疑，或有合理理由知道或懷疑任何財產代表犯罪得益、被用於或擬用於犯罪，或為恐怖分子財產時，必須提交STR。</p>
+
+            <h2>9. 記錄保存</h2>
+            <ul>
+                <li><strong>CDD記錄：</strong>在業務關係結束後保留至少6年</li>
+                <li><strong>交易記錄：</strong>在交易日期後保留至少6年</li>
+                <li><strong>STR記錄：</strong>保留至少6年</li>
+                <li><strong>培訓記錄：</strong>應保存反洗錢/反恐融資培訓記錄</li>
+            </ul>
+
+            <h2>10. 培訓要求</h2>
+            <ul>
+                <li><strong>初始培訓：</strong>所有新員工必須在入職時接受反洗錢/反恐融資培訓</li>
+                <li><strong>持續培訓：</strong>至少每年向所有相關員工提供定期複習培訓</li>
+                <li><strong>內容：</strong>應涵蓋公司的反洗錢/反恐融資政策和程序、如何識別和報告可疑交易、CDD要求、制裁義務和相關法律規定</li>
+                <li><strong>因應角色：</strong>培訓應針對不同員工的角色和責任量身定做</li>
+            </ul>
+
+            <h2>11. 不合規的處罰</h2>
+            <h3>刑事處罰</h3>
+            <ul>
+                <li><strong>洗錢：</strong>最高可處14年監禁及港幣5,000,000元罰款</li>
+                <li><strong>未能報告：</strong>最高可處3個月監禁及港幣25,000元罰款</li>
+                <li><strong>通風報信：</strong>最高可處3年監禁及港幣500,000元罰款</li>
+            </ul>
+            <h3>監管處罰</h3>
+            <ul>
+                <li><strong>證監會：</strong>可施加最高港幣10,000,000元或所得利潤/所避損失三倍（以較高者為準）的罰款</li>
+                <li><strong>保監局：</strong>具有類似的執行權力，包括施加金錢處罰、暫停或撤銷牌照</li>
+            </ul>
+
+            <h2>12. 實務實施提示</h2>
+            <ol>
+                <li><strong>從穩健的風險評估開始：</strong>機構風險評估是您整個反洗錢/反恐融資計劃的基礎</li>
+                <li><strong>採用風險為本的方法：</strong>按風險比例分配合規資源</li>
+                <li><strong>投資科技：</strong>考慮實施制裁和PEP篩查軟件、交易監控系統</li>
+                <li><strong>建立合規文化：</strong>所有員工均應理解反洗錢/反恐融資的重要性</li>
+                <li><strong>指定合規主任：</strong>委任一名高級人員全面負責反洗錢/反恐融資合規</li>
+                <li><strong>記錄一切：</strong>如未記錄，視同未發生</li>
+                <li><strong>定期測試系統：</strong>對反洗錢/反恐融資系統和控制進行定期審查和測試</li>
+                <li><strong>保持最新：</strong>訂閱監管更新，定期審查和更新政策和程序</li>
+            </ol>
+
+            <div class="key-takeaways">
+                <h3>重點摘要</h3>
+                <ul>
+                    <li>反洗錢/反恐融資合規是AMLO下的法律義務，也是證監會和保監局的監管要求</li>
+                    <li>進行全面的機構風險評估作為反洗錢/反恐融資計劃的基礎</li>
+                    <li>在入職時應用CDD並在整個業務關係中進行持續監控</li>
+                    <li>對政治人物、較高風險國家和複雜交易應用加強盡職調查</li>
+                    <li>懷疑時及時向JFIU提交STR；切勿向客戶通風報信</li>
+                    <li>保留所有反洗錢/反恐融資記錄至少6年</li>
+                    <li>不合規的處罰包括刑事檢控、最高港幣1,000萬元罰款及牌照撤銷</li>
+                </ul>
+            </div>
+
+            <div class="cta-box">
+                <h3>需要反洗錢/反恐融資合規協助？</h3>
+                <p>我們的團隊可以幫助您建立和維持穩健的反洗錢/反恐融資合規框架。從風險評估到政策起草到員工培訓，我們擁有支持您合規需要的專業知識。</p>
+                <a href="https://wa.me/85262528348">透過WhatsApp聯繫我們</a>
+            </div>
+
+            <div class="related-articles">
+                <h3>相關文章</h3>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <h4><a href="compliance-department-setup.html">如何設立合規部門</a></h4>
+                        <p>建立包括反洗錢/反恐融資能力的有效合規職能。</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="sfc-vs-ia-licensing.html">證監會與保監局：您的企業需要哪種牌照？</a></h4>
+                        <p>了解不同監管框架及其合規期望。</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="ia-insurance-broker-licence.html">如何申請保險經紀公司牌照</a></h4>
+                        <p>反洗錢/反恐融資政策是保監局牌照申請的重要組成部分。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIMPLIFIED CHINESE -->
+    <div class="lang-content" id="content-zh-hans">
+        <div class="article-meta">
+            <span class="category-tag">合规</span>
+            <span class="pub-date">发布日期：2026年3月5日</span>
+            <span class="read-time">阅读时间：18分钟</span>
+        </div>
+        <h1 class="article-title">香港证监会及保监局持牌人反洗钱/反恐融资合规指引</h1>
+        <div class="article-body">
+            <p>反洗钱（AML）和反恐融资（CFT）合规是香港金融监管框架的基石。证监会和保监局均对其持牌人施加全面的反洗钱/反恐融资义务。不遵守规定可导致严重处罚，包括巨额罚款、牌照暂停或撤销，以及刑事检控。本指南详细概述适用于证监会及保监局持牌人的反洗钱/反恐融资要求，并提供实务实施指引。</p>
+
+            <h2>1. 香港反洗钱/反恐融资监管框架</h2>
+            <h3>主要法例</h3>
+            <ul>
+                <li><strong>《打击洗钱及恐怖分子资金筹集条例》（AMLO，第615章）：</strong>管辖香港金融机构反洗钱/反恐融资义务的主要法例。</li>
+                <li><strong>《贩毒（追讨得益）条例》（DTROP，第405章）：</strong>将与贩毒罪行相关的洗钱行为列为刑事罪行。</li>
+                <li><strong>《有组织及严重罪行条例》（OSCO，第455章）：</strong>将洗钱罪行扩展至所有可公诉罪行。</li>
+                <li><strong>《联合国（反恐怖主义措施）条例》（UNATMO，第575章）：</strong>实施联合国安理会有关恐怖分子融资的决议。</li>
+            </ul>
+
+            <h2>2. 证监会反洗钱/反恐融资要求</h2>
+            <ul>
+                <li>在建立业务关系或进行超过指定阈值的偶发交易前进行客户尽职调查</li>
+                <li>识别和核实客户及实益拥有人的身份</li>
+                <li>了解业务关系的目的和拟定性质</li>
+                <li>对业务关系进行持续尽职调查和监控</li>
+                <li>对较高风险客户和情况应用加强尽职调查（EDD）</li>
+                <li>向联合财富情报组（JFIU）提交可疑交易报告（STR）</li>
+                <li>保存记录最少六年</li>
+                <li>对客户进行制裁名单筛查</li>
+                <li>为员工提供定期反洗钱/反恐融资培训</li>
+            </ul>
+
+            <h2>3. 保监局反洗钱/反恐融资要求</h2>
+            <ul>
+                <li><strong>范围：</strong>主要适用于长期（人寿）保险业务</li>
+                <li><strong>CDD触发条件：</strong>在建立业务关系时、怀疑洗钱或恐怖分子融资时</li>
+                <li><strong>受益人评估：</strong>对于人寿保险保单，必须识别受益人</li>
+            </ul>
+
+            <h2>4. 机构风险评估</h2>
+            <p>持牌人须进行机构风险评估（IRA），以识别、评估和了解公司面临的洗钱和恐怖分子融资风险：</p>
+            <ul>
+                <li><strong>客户风险：</strong>服务的客户类型</li>
+                <li><strong>产品/服务风险：</strong>可能较易被利用的产品或服务</li>
+                <li><strong>交付渠道风险：</strong>可能增加匿名性的渠道</li>
+                <li><strong>地域风险：</strong>洗钱/恐怖融资风险较高的国家或地区</li>
+            </ul>
+
+            <h2>5. 客户尽职调查（CDD）</h2>
+            <h3>客户识别及核实</h3>
+            <ul>
+                <li><strong>个人客户：</strong>获取并核实客户的全名、出生日期、国籍、住址及独特识别号码</li>
+                <li><strong>公司客户：</strong>获取并核实公司名称、法律形式、存在证明、注册地址等</li>
+            </ul>
+            <h3>实益拥有权</h3>
+            <p>识别并采取合理措施核实客户的实益拥有人身份。对于公司，通常指拥有或控制超过25%股份或投票权的自然人。</p>
+
+            <h2>6. 加强尽职调查（EDD）</h2>
+            <ul>
+                <li><strong>政治人物（PEP）：</strong>现正或曾经担任重要公共职能的客户</li>
+                <li><strong>较高风险国家或地区</strong></li>
+                <li><strong>复杂或不寻常交易</strong></li>
+                <li><strong>非面对面业务</strong></li>
+            </ul>
+
+            <h2>7. 持续监控</h2>
+            <ul>
+                <li><strong>交易监控：</strong>审查交易以确保与公司对客户的认识一致</li>
+                <li><strong>CDD审查：</strong>定期审查和更新客户资料</li>
+                <li><strong>制裁筛查：</strong>在入职和持续基础上进行制裁名单筛查</li>
+                <li><strong>PEP筛查：</strong>定期进行政治人物筛查</li>
+            </ul>
+
+            <h2>8. 可疑交易报告（STR）</h2>
+            <div class="warning-box">
+                <h4>重要提示：通风报信</h4>
+                <p>根据OSCO和DTROP，"通风报信"——即向客户或任何其他人披露已经或将会提交STR——属刑事罪行。最高可处3年监禁及港币500,000元罚款。</p>
+            </div>
+            <p>当持牌公司知道或怀疑任何财产代表犯罪得益时，必须及时向JFIU提交STR。</p>
+
+            <h2>9. 记录保存</h2>
+            <ul>
+                <li>CDD记录：业务关系结束后保留至少6年</li>
+                <li>交易记录：交易日期后保留至少6年</li>
+                <li>STR记录：保留至少6年</li>
+                <li>培训记录：应保存反洗钱培训记录</li>
+            </ul>
+
+            <h2>10. 培训要求</h2>
+            <ul>
+                <li>所有新员工必须在入职时接受反洗钱/反恐融资培训</li>
+                <li>至少每年向所有相关员工提供定期复习培训</li>
+                <li>培训应针对不同员工的角色和责任量身定做</li>
+                <li>应保存所有培训记录</li>
+            </ul>
+
+            <h2>11. 不合规的处罚</h2>
+            <h3>刑事处罚</h3>
+            <ul>
+                <li>洗钱：最高可处14年监禁及港币5,000,000元罚款</li>
+                <li>未能报告：最高可处3个月监禁及港币25,000元罚款</li>
+                <li>通风报信：最高可处3年监禁及港币500,000元罚款</li>
+            </ul>
+            <h3>监管处罚</h3>
+            <ul>
+                <li>证监会可施加最高港币10,000,000元罚款</li>
+                <li>保监局具有类似的执行权力</li>
+            </ul>
+
+            <h2>12. 实务实施提示</h2>
+            <ol>
+                <li><strong>从稳健的风险评估开始</strong></li>
+                <li><strong>采用风险为本的方法：</strong>按风险比例分配合规资源</li>
+                <li><strong>投资科技：</strong>考虑实施筛查软件和交易监控系统</li>
+                <li><strong>建立合规文化：</strong>所有员工均应理解反洗钱的重要性</li>
+                <li><strong>指定合规主任</strong></li>
+                <li><strong>记录一切：</strong>如未记录，视同未发生</li>
+                <li><strong>定期测试系统</strong></li>
+                <li><strong>保持最新：</strong>订阅监管更新，定期审查政策和程序</li>
+            </ol>
+
+            <div class="key-takeaways">
+                <h3>重点摘要</h3>
+                <ul>
+                    <li>反洗钱/反恐融资合规是AMLO下的法律义务</li>
+                    <li>进行全面的机构风险评估作为反洗钱计划的基础</li>
+                    <li>在入职时应用CDD并在整个业务关系中进行持续监控</li>
+                    <li>对政治人物、较高风险国家和复杂交易应用加强尽职调查</li>
+                    <li>怀疑时及时向JFIU提交STR；切勿向客户通风报信</li>
+                    <li>保留所有记录至少6年</li>
+                    <li>不合规的处罚包括刑事检控、最高港币1,000万元罚款及牌照撤销</li>
+                </ul>
+            </div>
+
+            <div class="cta-box">
+                <h3>需要反洗钱/反恐融资合规协助？</h3>
+                <p>我们的团队可以帮助您建立和维持稳健的反洗钱/反恐融资合规框架。</p>
+                <a href="https://wa.me/85262528348">通过WhatsApp联系我们</a>
+            </div>
+
+            <div class="related-articles">
+                <h3>相关文章</h3>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <h4><a href="compliance-department-setup.html">如何设立合规部门</a></h4>
+                        <p>建立包括反洗钱能力的有效合规职能。</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="sfc-vs-ia-licensing.html">证监会与保监局：您的企业需要哪种牌照？</a></h4>
+                        <p>了解不同监管框架及其合规期望。</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="ia-insurance-broker-licence.html">如何申请保险经纪公司牌照</a></h4>
+                        <p>反洗钱政策是保监局牌照申请的重要组成部分。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="blog-footer">
+    <div class="disclaimer"><strong>Disclaimer:</strong> This article is for general informational purposes only and does not constitute legal, financial, or professional advice. AML/CFT regulations are complex and subject to change. Please consult with qualified professionals or the relevant regulatory authorities for advice specific to your circumstances.</div>
+    <div class="copyright">&copy; 2026 David Licence Consulting. All rights reserved.</div>
+</footer>
+
+<a href="https://wa.me/85262528348" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958C9.72 30.986 12.738 32 16.004 32 24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.534 22.606c-.398 1.12-1.984 2.05-3.252 2.32-.868.184-2 .332-5.816-1.25-4.886-2.026-8.032-6.97-8.276-7.296-.234-.326-1.966-2.62-1.966-4.998s1.244-3.546 1.686-4.032c.398-.436 1.05-.636 1.672-.636.202 0 .384.01.548.018.442.02.664.046.956.742.364.868 1.25 3.044 1.358 3.266.11.222.218.52.068.832-.14.318-.264.514-.486.786-.222.272-.432.48-.654.738-.202.234-.43.484-.174.926.256.436 1.138 1.878 2.444 3.042 1.68 1.496 3.094 1.96 3.534 2.178.442.218.698.182.956-.11.264-.298 1.128-1.314 1.43-1.766.294-.452.594-.374.998-.222.41.148 2.578 1.216 3.02 1.438.442.222.736.332.846.518.108.186.108 1.082-.29 2.202z"/></svg>
+</a>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.getElementById('content-' + lang).classList.add('active');
+    document.querySelectorAll('.lang-switcher button').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+}
+</script>
+<script src="../js/main.js"></script>
+</body>
+</html>

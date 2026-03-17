@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFC vs IA: Which Licence Does Your Business Need? | David Licence Consulting</title>
+    <meta name="description" content="Compare SFC and IA licensing in Hong Kong. Learn which regulator oversees your business activities, capital requirements, timelines, and when dual licensing may be needed.">
+    <meta name="keywords" content="SFC licence, IA licence, Securities and Futures Commission, Insurance Authority, Hong Kong financial licence, SFC vs IA, dual licensing, regulated activities">
+    <meta name="author" content="David Licence Consulting">
+    <meta property="og:title" content="SFC vs IA: Which Licence Does Your Business Need?">
+    <meta property="og:description" content="A comprehensive comparison of Hong Kong's two main financial regulators — SFC and IA — to help you determine the right licensing path.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://davidconsulting.com/blog/sfc-vs-ia-licensing.html">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://davidconsulting.com/blog/sfc-vs-ia-licensing.html">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        :root { --primary: #1a3a5c; --primary-light: #2a5a8c; --accent: #c8a951; --text: #333; --text-light: #666; --bg: #f8f9fa; --white: #fff; --border: #e0e0e0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); line-height: 1.8; background: var(--bg); }
+        .blog-header { background: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo a { color: var(--white); text-decoration: none; font-size: 1.4rem; font-weight: 700; }
+        .logo a span { color: var(--accent); }
+        .header-nav { display: flex; align-items: center; gap: 25px; }
+        .header-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+        .header-nav a:hover { color: var(--accent); }
+        .lang-switcher { display: flex; gap: 8px; margin-left: 15px; padding-left: 15px; border-left: 1px solid rgba(255,255,255,0.3); }
+        .lang-switcher button { background: none; border: 1px solid rgba(255,255,255,0.4); color: rgba(255,255,255,0.85); padding: 3px 10px; border-radius: 3px; cursor: pointer; font-size: 0.85rem; transition: all 0.3s; }
+        .lang-switcher button:hover, .lang-switcher button.active { background: var(--accent); border-color: var(--accent); color: var(--primary); }
+        .article-container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+        .article-meta { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
+        .category-tag { background: var(--accent); color: var(--primary); padding: 4px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; }
+        .pub-date, .read-time { color: var(--text-light); font-size: 0.9rem; }
+        .article-title { font-size: 2.2rem; color: var(--primary); margin-bottom: 25px; line-height: 1.3; font-weight: 700; }
+        .article-body { background: var(--white); padding: 45px; border-radius: 12px; box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+        .article-body h2 { font-size: 1.6rem; color: var(--primary); margin: 35px 0 15px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+        .article-body h3 { font-size: 1.25rem; color: var(--primary-light); margin: 25px 0 12px; }
+        .article-body p { margin-bottom: 16px; text-align: justify; }
+        .article-body ul, .article-body ol { margin: 12px 0 20px 25px; }
+        .article-body li { margin-bottom: 8px; }
+        .info-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .info-table th, .info-table td { border: 1px solid var(--border); padding: 12px 15px; text-align: left; }
+        .info-table th { background: var(--primary); color: white; font-weight: 600; }
+        .info-table tr:nth-child(even) { background: #f8f9fa; }
+        .key-takeaways { background: linear-gradient(135deg, #f0f4f8, #e8eef5); border-left: 4px solid var(--accent); padding: 25px 30px; border-radius: 0 10px 10px 0; margin: 35px 0; }
+        .key-takeaways h3 { color: var(--primary); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; }
+        .key-takeaways ul { margin-bottom: 0; }
+        .cta-box { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: var(--white); padding: 30px; border-radius: 10px; text-align: center; margin: 40px 0; }
+        .cta-box h3 { color: var(--accent); margin-bottom: 10px; }
+        .cta-box p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+        .cta-box a { display: inline-block; background: #25D366; color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: transform 0.3s, box-shadow 0.3s; }
+        .cta-box a:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37,211,102,0.4); }
+        .related-articles { margin-top: 50px; padding-top: 30px; border-top: 2px solid var(--border); }
+        .related-articles h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: 20px; }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .related-card { border: 1px solid var(--border); border-radius: 8px; padding: 20px; transition: box-shadow 0.3s, transform 0.3s; }
+        .related-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); transform: translateY(-3px); }
+        .related-card h4 { font-size: 1rem; margin-bottom: 8px; }
+        .related-card h4 a { color: var(--primary); text-decoration: none; }
+        .related-card h4 a:hover { color: var(--accent); }
+        .related-card p { font-size: 0.85rem; color: var(--text-light); }
+        .blog-footer { background: var(--primary); color: rgba(255,255,255,0.7); padding: 30px 20px; text-align: center; margin-top: 60px; }
+        .blog-footer .disclaimer { max-width: 800px; margin: 0 auto 15px; font-size: 0.8rem; line-height: 1.6; }
+        .blog-footer .copyright { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+        .whatsapp-float { position: fixed; bottom: 25px; right: 25px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(37,211,102,0.4); z-index: 999; transition: transform 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        @media (max-width: 768px) { .article-title { font-size: 1.6rem; } .article-body { padding: 25px; } .info-table { font-size: 0.85rem; } .info-table th, .info-table td { padding: 8px; } }
+    </style>
+</head>
+<body>
+
+<header class="blog-header">
+    <div class="header-inner">
+        <div class="logo"><a href="../index.html">David <span>Licence</span> Consulting</a></div>
+        <nav class="header-nav">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#services">Services</a>
+            <a href="../index.html#contact">Contact</a>
+            <div class="lang-switcher">
+                <button class="active" onclick="switchLang('en')">EN</button>
+                <button onclick="switchLang('zh-hant')">繁</button>
+                <button onclick="switchLang('zh-hans')">简</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="article-container">
+
+    <!-- ENGLISH -->
+    <div class="lang-content active" id="content-en">
+        <div class="article-meta">
+            <span class="category-tag">Regulatory Comparison</span>
+            <span class="pub-date">Published: 10 February 2026</span>
+            <span class="read-time">16 min read</span>
+        </div>
+        <h1 class="article-title">SFC vs IA: Which Licence Does Your Business Need?</h1>
+        <div class="article-body">
+            <p>Hong Kong's financial services industry is governed by a multi-regulator framework. For firms seeking to operate in the territory, understanding which regulator oversees their activities — and therefore which licence they need — is the essential first step. The two regulators most commonly encountered by financial services firms are the Securities and Futures Commission (SFC) and the Insurance Authority (IA). This article provides a comprehensive comparison of both regulatory bodies, the activities they regulate, and a practical framework for determining which licence your business requires.</p>
+
+            <h2>1. Overview of the Two Regulators</h2>
+            <h3>Securities and Futures Commission (SFC)</h3>
+            <p>The SFC is the statutory regulatory body responsible for regulating the securities and futures markets in Hong Kong. Established under the Securities and Futures Ordinance (SFO, Cap. 571), the SFC oversees all market participants engaged in dealing, advising, managing, and distributing securities, futures, and other financial products. The SFC's mandate covers 10 types of regulated activities (RAs), numbered from Type 1 through Type 12 (with some numbers currently unused).</p>
+            <h3>Insurance Authority (IA)</h3>
+            <p>The IA is the independent statutory body responsible for regulating the insurance industry in Hong Kong under the Insurance Ordinance (IO, Cap. 41). Since assuming direct regulation of insurance intermediaries on 23 September 2019, the IA licenses and supervises insurance broker companies, insurance agency companies, and their individual licensees (Responsible Officers and Technical Representatives). The IA also supervises authorized insurers.</p>
+
+            <h2>2. Activities Regulated by the SFC</h2>
+            <p>The SFC regulates the following types of activities under the SFO:</p>
+            <table class="info-table">
+                <tr>
+                    <th>Type</th>
+                    <th>Regulated Activity</th>
+                    <th>Typical Examples</th>
+                </tr>
+                <tr>
+                    <td>Type 1</td>
+                    <td>Dealing in Securities</td>
+                    <td>Stockbroking, executing trades in shares, bonds, ETFs</td>
+                </tr>
+                <tr>
+                    <td>Type 2</td>
+                    <td>Dealing in Futures Contracts</td>
+                    <td>Futures trading, derivatives execution</td>
+                </tr>
+                <tr>
+                    <td>Type 3</td>
+                    <td>Leveraged Foreign Exchange Trading</td>
+                    <td>Forex margin trading</td>
+                </tr>
+                <tr>
+                    <td>Type 4</td>
+                    <td>Advising on Securities</td>
+                    <td>Research analysts, investment advisors</td>
+                </tr>
+                <tr>
+                    <td>Type 5</td>
+                    <td>Advising on Futures Contracts</td>
+                    <td>Futures advisory services</td>
+                </tr>
+                <tr>
+                    <td>Type 6</td>
+                    <td>Advising on Corporate Finance</td>
+                    <td>IPO sponsors, M&A advisors</td>
+                </tr>
+                <tr>
+                    <td>Type 7</td>
+                    <td>Providing Automated Trading Services</td>
+                    <td>Electronic trading platforms, dark pools</td>
+                </tr>
+                <tr>
+                    <td>Type 8</td>
+                    <td>Securities Margin Financing</td>
+                    <td>Margin lending for securities purchases</td>
+                </tr>
+                <tr>
+                    <td>Type 9</td>
+                    <td>Asset Management</td>
+                    <td>Fund management, portfolio management, discretionary account management</td>
+                </tr>
+                <tr>
+                    <td>Type 10</td>
+                    <td>Providing Credit Rating Services</td>
+                    <td>Credit rating agencies</td>
+                </tr>
+            </table>
+            <p>Any corporation carrying on a business in one or more of these regulated activities in Hong Kong must hold the corresponding SFC licence. Individuals who perform regulated functions within a licensed corporation must be approved as Licensed Representatives (LRs) or Responsible Officers (ROs).</p>
+
+            <h2>3. Activities Regulated by the IA</h2>
+            <p>The IA regulates insurance intermediary activities, which are defined as:</p>
+            <ul>
+                <li><strong>Insurance broking:</strong> Acting on behalf of clients to arrange insurance coverage, negotiate terms, and place business with insurers</li>
+                <li><strong>Insurance agency:</strong> Acting on behalf of insurers to distribute and sell insurance products to clients</li>
+                <li><strong>Regulated advisory activities:</strong> Providing advice on insurance products, including needs analysis, product recommendations, and ongoing servicing</li>
+            </ul>
+            <p>The IA issues licences to:</p>
+            <ul>
+                <li>Insurance broker companies</li>
+                <li>Insurance agency companies</li>
+                <li>Individual licensees: Responsible Officers (Broker/Agent), Technical Representatives (Broker/Agent)</li>
+            </ul>
+            <p>The IA also authorizes and supervises insurance companies themselves, but this article focuses primarily on intermediary licensing.</p>
+
+            <h2>4. When Do You Need an SFC Licence?</h2>
+            <p>You need an SFC licence if your business involves any of the regulated activities listed above. Common scenarios include:</p>
+            <ul>
+                <li><strong>Securities brokerage:</strong> Buying and selling securities on behalf of clients (Type 1)</li>
+                <li><strong>Investment advisory:</strong> Providing personalized recommendations on securities or futures (Types 4/5)</li>
+                <li><strong>Fund management:</strong> Managing investment portfolios or collective investment schemes (Type 9)</li>
+                <li><strong>Corporate finance advisory:</strong> Advising on IPOs, mergers, acquisitions, and other corporate transactions (Type 6)</li>
+                <li><strong>Distributing investment funds:</strong> Selling or marketing SFC-authorized funds (Type 1)</li>
+                <li><strong>Operating trading platforms:</strong> Providing electronic venues for trading securities or derivatives (Type 7)</li>
+                <li><strong>Virtual asset services:</strong> Operating virtual asset trading platforms (Type 1 and/or Type 7 under the VATP regime)</li>
+            </ul>
+
+            <h2>5. When Do You Need an IA Licence?</h2>
+            <p>You need an IA licence if your business involves:</p>
+            <ul>
+                <li><strong>Insurance broking:</strong> Acting as an intermediary between clients and insurers to arrange insurance coverage</li>
+                <li><strong>Insurance agency:</strong> Representing one or more insurers to distribute their products</li>
+                <li><strong>Advising on insurance:</strong> Providing recommendations on insurance products, including life insurance, general insurance, and investment-linked insurance products</li>
+                <li><strong>Handling insurance claims:</strong> Assisting clients with claims processes as part of insurance broking or agency services</li>
+            </ul>
+
+            <h2>6. Scenarios Where Both Licences May Apply</h2>
+            <p>In certain business models, a firm may need licences from both the SFC and the IA. This dual-licensing scenario most commonly arises in the following contexts:</p>
+            <h3>Wealth Management and Financial Planning</h3>
+            <p>Firms offering comprehensive wealth management services may advise clients on both securities (such as stocks, bonds, and investment funds) and insurance products (such as life insurance and annuities). In such cases, the securities-related activities require an SFC Type 1 and/or Type 4 licence, while the insurance-related activities require an IA insurance broker or agency licence.</p>
+            <h3>Distribution of Investment-Linked Insurance Products (ILAS)</h3>
+            <p>Investment-Linked Assurance Schemes (ILAS) are insurance products with an investment component. While ILAS products are fundamentally insurance contracts regulated by the IA, the investment component may trigger SFC regulatory requirements, particularly regarding the suitability of investment recommendations. Firms distributing ILAS products typically need an IA licence, but those providing investment advice on the underlying funds may also need SFC licensing.</p>
+            <h3>Multi-Service Financial Groups</h3>
+            <p>Financial groups that offer a range of services — including securities dealing, asset management, and insurance broking — will typically need to establish separate licensed entities or obtain multiple licences. For example, a financial group might have an SFC-licensed subsidiary for its securities and asset management business, and a separate IA-licensed subsidiary for its insurance broking activities.</p>
+            <h3>Mandatory Provident Fund (MPF) Related Activities</h3>
+            <p>MPF intermediaries are regulated under a co-regulatory framework. Insurance companies that are MPF scheme sponsors may have agents who sell MPF products (regulated by the IA) while also distributing MPF-constituent funds (which may involve SFC-regulated activities).</p>
+
+            <h2>7. Key Differences in Requirements</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Requirement</th>
+                    <th>SFC</th>
+                    <th>IA</th>
+                </tr>
+                <tr>
+                    <td>Governing legislation</td>
+                    <td>Securities and Futures Ordinance (Cap. 571)</td>
+                    <td>Insurance Ordinance (Cap. 41)</td>
+                </tr>
+                <tr>
+                    <td>Entity type</td>
+                    <td>Must be a corporation (company)</td>
+                    <td>Must be a company (broker) or individual (agent can be sole proprietor in some cases)</td>
+                </tr>
+                <tr>
+                    <td>Key personnel</td>
+                    <td>At least 2 Responsible Officers (ROs) per regulated activity</td>
+                    <td>Chief Executive + at least 2 Responsible Officers (for broker companies)</td>
+                </tr>
+                <tr>
+                    <td>Competency exams</td>
+                    <td>HKSI LE Papers (Licensing Examination)</td>
+                    <td>IIQE Papers (Insurance Intermediaries Qualifying Examination)</td>
+                </tr>
+                <tr>
+                    <td>Fit and proper</td>
+                    <td>Competence, honesty, integrity, financial soundness, reputation</td>
+                    <td>Similar criteria: competence, honesty, integrity, financial soundness, reputation</td>
+                </tr>
+                <tr>
+                    <td>Insurance requirement</td>
+                    <td>Professional indemnity insurance (not mandatory for all types but expected)</td>
+                    <td>PII mandatory (min. HK$3M per claim / HK$5M aggregate for brokers)</td>
+                </tr>
+                <tr>
+                    <td>CPD</td>
+                    <td>5 CPD hours per year for each Licensed Representative</td>
+                    <td>10 CPD hours per year for each licensee</td>
+                </tr>
+                <tr>
+                    <td>Annual obligations</td>
+                    <td>Annual return, audited financial statements, compliance reporting</td>
+                    <td>Annual return, audited financial statements, PII renewal evidence</td>
+                </tr>
+            </table>
+
+            <h2>8. Capital Requirements Comparison</h2>
+            <p>Capital requirements differ significantly between the SFC and the IA, and within the SFC, they vary by the type of regulated activity:</p>
+            <h3>SFC Capital Requirements</h3>
+            <table class="info-table">
+                <tr>
+                    <th>Regulated Activity Type</th>
+                    <th>Minimum Paid-Up Capital</th>
+                    <th>Minimum Liquid Capital</th>
+                </tr>
+                <tr>
+                    <td>Type 1 (Dealing in Securities)</td>
+                    <td>HK$5,000,000</td>
+                    <td>HK$3,000,000</td>
+                </tr>
+                <tr>
+                    <td>Type 4 (Advising on Securities)</td>
+                    <td>HK$500,000</td>
+                    <td>HK$100,000</td>
+                </tr>
+                <tr>
+                    <td>Type 9 (Asset Management)</td>
+                    <td>HK$5,000,000</td>
+                    <td>HK$3,000,000 (or HK$100,000 if managing only for professional investors)</td>
+                </tr>
+                <tr>
+                    <td>Type 4 + 9 (combined)</td>
+                    <td>HK$5,000,000</td>
+                    <td>HK$3,000,000 (or HK$100,000 if Type 9 for professional investors only)</td>
+                </tr>
+            </table>
+            <p>The SFC also imposes ongoing Financial Resources Rules (FRR) that require licensed corporations to maintain prescribed levels of liquid capital at all times, calculated based on a risk-adjusted formula.</p>
+            <h3>IA Capital Requirements</h3>
+            <table class="info-table">
+                <tr>
+                    <th>Licence Type</th>
+                    <th>Minimum Paid-Up Capital</th>
+                    <th>Minimum Net Assets</th>
+                </tr>
+                <tr>
+                    <td>Insurance Broker Company</td>
+                    <td>HK$500,000</td>
+                    <td>HK$500,000</td>
+                </tr>
+                <tr>
+                    <td>Insurance Agency Company</td>
+                    <td>Not specified (lower threshold)</td>
+                    <td>No specific minimum (but must demonstrate adequate resources)</td>
+                </tr>
+            </table>
+            <p>The IA's capital requirements are generally lower than the SFC's, particularly for activities comparable to advisory work. This reflects the different nature and scale of risks involved in insurance intermediation versus securities dealing.</p>
+
+            <h2>9. Timeline Comparison</h2>
+            <p>The time required to obtain a licence from each regulator varies:</p>
+            <table class="info-table">
+                <tr>
+                    <th>Aspect</th>
+                    <th>SFC</th>
+                    <th>IA</th>
+                </tr>
+                <tr>
+                    <td>Typical application processing</td>
+                    <td>4-8 months</td>
+                    <td>3-6 months</td>
+                </tr>
+                <tr>
+                    <td>Pre-application preparation</td>
+                    <td>2-4 months</td>
+                    <td>1-3 months</td>
+                </tr>
+                <tr>
+                    <td>Total time (preparation + approval)</td>
+                    <td>6-12 months</td>
+                    <td>4-9 months</td>
+                </tr>
+                <tr>
+                    <td>Individual licence processing</td>
+                    <td>4-8 weeks (Licensed Representative)</td>
+                    <td>4-8 weeks (Technical Representative)</td>
+                </tr>
+            </table>
+            <p>SFC applications generally take longer due to the more detailed regulatory requirements, particularly regarding the Financial Resources Rules, internal controls, and risk management frameworks. IA applications, while still thorough, tend to have a somewhat shorter timeline, especially for straightforward insurance broker licence applications.</p>
+
+            <h2>10. Dual Licensing Considerations</h2>
+            <p>If your business requires licences from both the SFC and the IA, consider the following:</p>
+            <ul>
+                <li><strong>Corporate structure:</strong> You may choose to house both licences within a single entity or establish separate entities. Each approach has pros and cons — a single entity simplifies operations but increases regulatory complexity; separate entities provide clearer regulatory segregation but add operational overhead.</li>
+                <li><strong>Key personnel:</strong> Individuals serving as ROs may need to hold qualifications and licences from both regulators if they oversee both types of regulated activities. This can be challenging to find in the market.</li>
+                <li><strong>Compliance:</strong> A dual-licensed firm must comply with the regulatory requirements of both the SFC and the IA, which may differ in their expectations. The compliance function must be designed to address both sets of requirements.</li>
+                <li><strong>Capital requirements:</strong> If both licences are held in a single entity, the higher capital requirements will apply. Plan your capitalization accordingly.</li>
+                <li><strong>Costs:</strong> Dual licensing involves higher setup and ongoing costs, including licence fees, compliance costs, audit requirements, and potentially the need for more qualified personnel.</li>
+                <li><strong>Reporting:</strong> The firm will need to submit returns and reports to both regulators, potentially on different timelines and in different formats.</li>
+            </ul>
+
+            <h2>11. Decision Framework: Which Licence Do You Need?</h2>
+            <p>Use the following framework to determine which licence (or licences) your business needs:</p>
+            <h3>Step 1: Identify Your Activities</h3>
+            <p>List all the regulated activities your business will carry on in Hong Kong. Be specific about the products you will deal in, advise on, or manage.</p>
+            <h3>Step 2: Classify Each Activity</h3>
+            <p>For each activity, determine whether it falls under the SFO (SFC-regulated) or the IO (IA-regulated):</p>
+            <ul>
+                <li>If the activity involves securities, futures, or other financial instruments as defined in the SFO, it is likely SFC-regulated</li>
+                <li>If the activity involves insurance products (whether life or general), it is likely IA-regulated</li>
+                <li>If the activity involves investment-linked insurance or products with both investment and insurance elements, both regulators may be relevant</li>
+            </ul>
+            <h3>Step 3: Determine the Scope of Each Licence</h3>
+            <p>For SFC-regulated activities, identify which specific type(s) of regulated activity (Type 1-10) you need. For IA-regulated activities, determine whether you need a broker or agency licence, and for which classes of insurance.</p>
+            <h3>Step 4: Assess Your Resources</h3>
+            <p>Evaluate whether you have the capital, personnel, systems, and operational capacity to support the required licences. Consider whether a phased approach — obtaining one licence first and adding the second later — might be appropriate.</p>
+            <h3>Step 5: Seek Professional Advice</h3>
+            <p>Given the complexity of Hong Kong's regulatory landscape, engaging experienced regulatory consultants is strongly recommended. They can help you navigate the requirements, optimize your corporate structure, and avoid costly mistakes.</p>
+
+            <div class="key-takeaways">
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>The SFC regulates securities, futures, and asset management activities; the IA regulates insurance intermediary activities</li>
+                    <li>SFC capital requirements are generally higher (HK$5M for dealing/asset management) compared to IA (HK$500,000 for broker companies)</li>
+                    <li>Wealth management, ILAS distribution, and multi-service financial groups may need dual licensing</li>
+                    <li>SFC applications typically take 6-12 months total; IA applications typically take 4-9 months</li>
+                    <li>Dual-licensed firms face increased complexity in compliance, reporting, and key personnel requirements</li>
+                    <li>Professional advisory support is strongly recommended to navigate the licensing process efficiently</li>
+                </ul>
+            </div>
+
+            <div class="cta-box">
+                <h3>Unsure Which Licence You Need?</h3>
+                <p>Our team specializes in both SFC and IA licensing. Let us help you determine the right licensing path and guide you through the application process.</p>
+                <a href="https://wa.me/85262528348">Contact Us on WhatsApp</a>
+            </div>
+
+            <div class="related-articles">
+                <h3>Related Articles</h3>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <h4><a href="ia-insurance-broker-licence.html">How to Apply for an Insurance Broker Company Licence</a></h4>
+                        <p>Complete step-by-step guide to the IA broker licence application process.</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="overseas-firms-hong-kong.html">How Overseas Firms Can Expand to Hong Kong</a></h4>
+                        <p>Guide for international financial firms looking to establish a presence in Hong Kong.</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="compliance-department-setup.html">How to Set Up a Compliance Department</a></h4>
+                        <p>Building an effective compliance function for SFC or IA licensed firms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TRADITIONAL CHINESE -->
+    <div class="lang-content" id="content-zh-hant">
+        <div class="article-meta">
+            <span class="category-tag">監管比較</span>
+            <span class="pub-date">發布日期：2026年2月10日</span>
+            <span class="read-time">閱讀時間：16分鐘</span>
+        </div>
+        <h1 class="article-title">證監會與保監局：您的企業需要哪種牌照？</h1>
+        <div class="article-body">
+            <p>香港的金融服務業由多重監管機構框架管轄。對於尋求在香港營運的企業而言，了解哪個監管機構監管其活動——從而確定需要哪種牌照——是不可或缺的第一步。金融服務企業最常接觸的兩個監管機構是證券及期貨事務監察委員會（證監會）和保險業監管局（保監局）。本文全面比較了這兩個監管機構、它們所監管的活動，以及確定您的企業需要哪種牌照的實用框架。</p>
+
+            <h2>1. 兩大監管機構概覽</h2>
+            <h3>證券及期貨事務監察委員會（證監會）</h3>
+            <p>證監會是負責監管香港證券及期貨市場的法定規管機構。根據《證券及期貨條例》（SFO，第571章）設立，證監會監管所有從事買賣、諮詢、管理及分銷證券、期貨及其他金融產品的市場參與者。證監會的規管範圍涵蓋10類受規管活動（RA），編號從第1類至第12類（部分編號目前未使用）。</p>
+            <h3>保險業監管局（保監局）</h3>
+            <p>保監局是根據《保險業條例》（IO，第41章）負責規管香港保險業的獨立法定機構。自2019年9月23日起直接規管保險中介人以來，保監局負責發牌及監管保險經紀公司、保險代理公司及其個人持牌人（負責人及技術代表）。保監局亦監管獲授權保險公司。</p>
+
+            <h2>2. 證監會規管的活動</h2>
+            <p>證監會根據《證券及期貨條例》規管以下類型的活動：</p>
+            <table class="info-table">
+                <tr>
+                    <th>類型</th>
+                    <th>受規管活動</th>
+                    <th>典型例子</th>
+                </tr>
+                <tr>
+                    <td>第1類</td>
+                    <td>證券交易</td>
+                    <td>股票經紀、執行股票、債券、ETF的交易</td>
+                </tr>
+                <tr>
+                    <td>第2類</td>
+                    <td>期貨合約交易</td>
+                    <td>期貨交易、衍生品執行</td>
+                </tr>
+                <tr>
+                    <td>第3類</td>
+                    <td>槓桿式外匯交易</td>
+                    <td>外匯保證金交易</td>
+                </tr>
+                <tr>
+                    <td>第4類</td>
+                    <td>就證券提供意見</td>
+                    <td>研究分析師、投資顧問</td>
+                </tr>
+                <tr>
+                    <td>第5類</td>
+                    <td>就期貨合約提供意見</td>
+                    <td>期貨諮詢服務</td>
+                </tr>
+                <tr>
+                    <td>第6類</td>
+                    <td>就機構融資提供意見</td>
+                    <td>IPO保薦人、併購顧問</td>
+                </tr>
+                <tr>
+                    <td>第7類</td>
+                    <td>提供自動化交易服務</td>
+                    <td>電子交易平台、暗盤</td>
+                </tr>
+                <tr>
+                    <td>第8類</td>
+                    <td>證券保證金融資</td>
+                    <td>為購買證券提供保證金貸款</td>
+                </tr>
+                <tr>
+                    <td>第9類</td>
+                    <td>資產管理</td>
+                    <td>基金管理、投資組合管理、全權委託賬戶管理</td>
+                </tr>
+                <tr>
+                    <td>第10類</td>
+                    <td>提供信貸評級服務</td>
+                    <td>信貸評級機構</td>
+                </tr>
+            </table>
+
+            <h2>3. 保監局規管的活動</h2>
+            <p>保監局規管保險中介人活動，定義包括：</p>
+            <ul>
+                <li><strong>保險經紀：</strong>代表客戶安排保險保障、協商條款及向保險公司投保</li>
+                <li><strong>保險代理：</strong>代表保險公司向客戶分銷及銷售保險產品</li>
+                <li><strong>受規管諮詢活動：</strong>就保險產品提供意見，包括需求分析、產品推薦及持續服務</li>
+            </ul>
+
+            <h2>4. 何時需要證監會牌照？</h2>
+            <p>如果您的業務涉及上述任何受規管活動，您便需要證監會牌照。常見場景包括：</p>
+            <ul>
+                <li><strong>證券經紀：</strong>代表客戶買賣證券（第1類）</li>
+                <li><strong>投資諮詢：</strong>就證券或期貨提供個人化建議（第4/5類）</li>
+                <li><strong>基金管理：</strong>管理投資組合或集體投資計劃（第9類）</li>
+                <li><strong>企業融資諮詢：</strong>就IPO、併購等企業交易提供意見（第6類）</li>
+                <li><strong>分銷投資基金：</strong>銷售或推廣證監會認可基金（第1類）</li>
+                <li><strong>虛擬資產服務：</strong>營運虛擬資產交易平台（VATP制度下的第1類及/或第7類）</li>
+            </ul>
+
+            <h2>5. 何時需要保監局牌照？</h2>
+            <p>如果您的業務涉及以下活動，您便需要保監局牌照：</p>
+            <ul>
+                <li><strong>保險經紀：</strong>作為客戶與保險公司之間的中介安排保險保障</li>
+                <li><strong>保險代理：</strong>代表一家或多家保險公司分銷其產品</li>
+                <li><strong>就保險提供意見：</strong>就保險產品提供建議，包括人壽保險、一般保險及投資相連保險產品</li>
+            </ul>
+
+            <h2>6. 兩種牌照均可能適用的場景</h2>
+            <p>在某些業務模式中，企業可能需要同時持有證監會和保監局的牌照。這種雙重持牌情況最常出現在以下場景：</p>
+            <h3>財富管理和財務規劃</h3>
+            <p>提供全面財富管理服務的企業可能同時就證券（如股票、債券和投資基金）和保險產品（如人壽保險和年金）向客戶提供意見。在這種情況下，證券相關活動需要證監會第1類及/或第4類牌照，而保險相關活動則需要保監局的保險經紀或代理牌照。</p>
+            <h3>分銷投資相連保險產品（ILAS）</h3>
+            <p>投資相連壽險計劃（ILAS）是具有投資成分的保險產品。雖然ILAS產品本質上是受保監局規管的保險合約，但投資成分可能觸發證監會的監管要求，特別是關於投資建議的適合性方面。分銷ILAS產品的企業通常需要保監局牌照，但就相關基金提供投資意見者亦可能需要證監會牌照。</p>
+            <h3>多元服務金融集團</h3>
+            <p>提供一系列服務的金融集團——包括證券交易、資產管理和保險經紀——通常需要設立獨立的持牌實體或取得多種牌照。</p>
+
+            <h2>7. 要求的主要差異</h2>
+            <table class="info-table">
+                <tr>
+                    <th>要求</th>
+                    <th>證監會</th>
+                    <th>保監局</th>
+                </tr>
+                <tr>
+                    <td>管轄法例</td>
+                    <td>《證券及期貨條例》（第571章）</td>
+                    <td>《保險業條例》（第41章）</td>
+                </tr>
+                <tr>
+                    <td>主要人員</td>
+                    <td>每項受規管活動至少2名負責人</td>
+                    <td>行政總裁 + 至少2名負責人（經紀公司）</td>
+                </tr>
+                <tr>
+                    <td>資格考試</td>
+                    <td>HKSI LE試卷（牌照考試）</td>
+                    <td>IIQE試卷（保險中介人資格考試）</td>
+                </tr>
+                <tr>
+                    <td>CPD</td>
+                    <td>每位持牌代表每年5個CPD小時</td>
+                    <td>每位持牌人每年10個CPD小時</td>
+                </tr>
+            </table>
+
+            <h2>8. 資本要求比較</h2>
+            <h3>證監會資本要求</h3>
+            <table class="info-table">
+                <tr>
+                    <th>受規管活動類型</th>
+                    <th>最低繳足股本</th>
+                    <th>最低速動資金</th>
+                </tr>
+                <tr>
+                    <td>第1類（證券交易）</td>
+                    <td>港幣5,000,000元</td>
+                    <td>港幣3,000,000元</td>
+                </tr>
+                <tr>
+                    <td>第4類（就證券提供意見）</td>
+                    <td>港幣500,000元</td>
+                    <td>港幣100,000元</td>
+                </tr>
+                <tr>
+                    <td>第9類（資產管理）</td>
+                    <td>港幣5,000,000元</td>
+                    <td>港幣3,000,000元（僅管理專業投資者資產則為港幣100,000元）</td>
+                </tr>
+            </table>
+            <h3>保監局資本要求</h3>
+            <table class="info-table">
+                <tr>
+                    <th>牌照類型</th>
+                    <th>最低繳足股本</th>
+                    <th>最低淨資產</th>
+                </tr>
+                <tr>
+                    <td>保險經紀公司</td>
+                    <td>港幣500,000元</td>
+                    <td>港幣500,000元</td>
+                </tr>
+            </table>
+            <p>保監局的資本要求通常低於證監會，特別是與諮詢工作相當的活動。這反映了保險中介與證券交易涉及的風險性質和規模不同。</p>
+
+            <h2>9. 時間線比較</h2>
+            <table class="info-table">
+                <tr>
+                    <th>方面</th>
+                    <th>證監會</th>
+                    <th>保監局</th>
+                </tr>
+                <tr>
+                    <td>一般申請處理</td>
+                    <td>4-8個月</td>
+                    <td>3-6個月</td>
+                </tr>
+                <tr>
+                    <td>申請前準備</td>
+                    <td>2-4個月</td>
+                    <td>1-3個月</td>
+                </tr>
+                <tr>
+                    <td>總時間（準備+審批）</td>
+                    <td>6-12個月</td>
+                    <td>4-9個月</td>
+                </tr>
+            </table>
+
+            <h2>10. 雙重持牌考慮</h2>
+            <p>如果您的業務需要同時持有證監會和保監局的牌照，請考慮以下因素：</p>
+            <ul>
+                <li><strong>公司架構：</strong>您可以選擇將兩個牌照放在同一實體中或設立獨立實體</li>
+                <li><strong>主要人員：</strong>擔任負責人的個人如果監督兩類受規管活動，可能需要持有兩個監管機構的資格和牌照</li>
+                <li><strong>合規：</strong>雙重持牌企業必須同時遵守證監會和保監局的監管要求</li>
+                <li><strong>資本要求：</strong>如果同一實體持有兩個牌照，將適用較高的資本要求</li>
+                <li><strong>成本：</strong>雙重持牌涉及更高的設立和持續成本</li>
+            </ul>
+
+            <h2>11. 決策框架：您需要哪種牌照？</h2>
+            <p>使用以下框架確定您的業務需要哪種牌照：</p>
+            <ol>
+                <li><strong>識別您的活動：</strong>列出您的業務將在香港從事的所有受規管活動</li>
+                <li><strong>分類每項活動：</strong>確定每項活動屬於SFO（證監會規管）還是IO（保監局規管）</li>
+                <li><strong>確定每種牌照的範圍：</strong>對於證監會規管的活動，確定具體需要哪種類型的受規管活動</li>
+                <li><strong>評估您的資源：</strong>評估您是否有足夠的資本、人員、系統和營運能力</li>
+                <li><strong>尋求專業意見：</strong>鑑於香港監管環境的複雜性，強烈建議聘用經驗豐富的監管顧問</li>
+            </ol>
+
+            <div class="key-takeaways">
+                <h3>重點摘要</h3>
+                <ul>
+                    <li>證監會規管證券、期貨及資產管理活動；保監局規管保險中介活動</li>
+                    <li>證監會資本要求通常較高（交易/資產管理為港幣500萬元），保監局相對較低（經紀公司為港幣50萬元）</li>
+                    <li>財富管理、ILAS分銷及多元服務金融集團可能需要雙重持牌</li>
+                    <li>證監會申請總計通常需時6-12個月；保監局申請通常需時4-9個月</li>
+                    <li>雙重持牌企業在合規、匯報及主要人員要求方面面臨更高複雜性</li>
+                    <li>強烈建議尋求專業諮詢支援，以高效地完成牌照申請流程</li>
+                </ul>
+            </div>
+
+            <div class="cta-box">
+                <h3>不確定需要哪種牌照？</h3>
+                <p>我們的團隊專精於證監會及保監局的牌照服務。讓我們幫助您確定正確的牌照路徑，並指導您完成申請流程。</p>
+                <a href="https://wa.me/85262528348">透過WhatsApp聯繫我們</a>
+            </div>
+
+            <div class="related-articles">
+                <h3>相關文章</h3>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <h4><a href="ia-insurance-broker-licence.html">如何申請保險經紀公司牌照</a></h4>
+                        <p>保監局經紀牌照申請流程的完整逐步指南。</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="overseas-firms-hong-kong.html">海外金融機構如何拓展香港業務</a></h4>
+                        <p>國際金融機構在香港設立據點的指南。</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="compliance-department-setup.html">如何設立合規部門</a></h4>
+                        <p>為證監會或保監局持牌機構建立有效的合規職能。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIMPLIFIED CHINESE -->
+    <div class="lang-content" id="content-zh-hans">
+        <div class="article-meta">
+            <span class="category-tag">监管比较</span>
+            <span class="pub-date">发布日期：2026年2月10日</span>
+            <span class="read-time">阅读时间：16分钟</span>
+        </div>
+        <h1 class="article-title">证监会与保监局：您的企业需要哪种牌照？</h1>
+        <div class="article-body">
+            <p>香港的金融服务业由多重监管机构框架管辖。对于寻求在香港运营的企业而言，了解哪个监管机构监管其活动——从而确定需要哪种牌照——是不可或缺的第一步。金融服务企业最常接触的两个监管机构是证券及期货事务监察委员会（证监会）和保险业监管局（保监局）。本文全面比较了这两个监管机构、它们所监管的活动，以及确定您的企业需要哪种牌照的实用框架。</p>
+
+            <h2>1. 两大监管机构概览</h2>
+            <h3>证券及期货事务监察委员会（证监会）</h3>
+            <p>证监会是负责监管香港证券及期货市场的法定规管机构。根据《证券及期货条例》（SFO，第571章）设立，证监会监管所有从事买卖、咨询、管理及分销证券、期货及其他金融产品的市场参与者。证监会的规管范围涵盖10类受规管活动（RA），编号从第1类至第12类（部分编号目前未使用）。</p>
+            <h3>保险业监管局（保监局）</h3>
+            <p>保监局是根据《保险业条例》（IO，第41章）负责规管香港保险业的独立法定机构。自2019年9月23日起直接规管保险中介人以来，保监局负责发牌及监管保险经纪公司、保险代理公司及其个人持牌人（负责人及技术代表）。</p>
+
+            <h2>2. 证监会规管的活动</h2>
+            <table class="info-table">
+                <tr>
+                    <th>类型</th>
+                    <th>受规管活动</th>
+                    <th>典型例子</th>
+                </tr>
+                <tr>
+                    <td>第1类</td>
+                    <td>证券交易</td>
+                    <td>股票经纪、执行股票、债券、ETF的交易</td>
+                </tr>
+                <tr>
+                    <td>第2类</td>
+                    <td>期货合约交易</td>
+                    <td>期货交易、衍生品执行</td>
+                </tr>
+                <tr>
+                    <td>第4类</td>
+                    <td>就证券提供意见</td>
+                    <td>研究分析师、投资顾问</td>
+                </tr>
+                <tr>
+                    <td>第6类</td>
+                    <td>就机构融资提供意见</td>
+                    <td>IPO保荐人、并购顾问</td>
+                </tr>
+                <tr>
+                    <td>第9类</td>
+                    <td>资产管理</td>
+                    <td>基金管理、投资组合管理</td>
+                </tr>
+            </table>
+
+            <h2>3. 保监局规管的活动</h2>
+            <ul>
+                <li><strong>保险经纪：</strong>代表客户安排保险保障、协商条款及向保险公司投保</li>
+                <li><strong>保险代理：</strong>代表保险公司向客户分销及销售保险产品</li>
+                <li><strong>受规管咨询活动：</strong>就保险产品提供意见，包括需求分析、产品推荐及持续服务</li>
+            </ul>
+
+            <h2>4. 何时需要证监会牌照？</h2>
+            <ul>
+                <li><strong>证券经纪：</strong>代表客户买卖证券（第1类）</li>
+                <li><strong>投资咨询：</strong>就证券或期货提供个人化建议（第4/5类）</li>
+                <li><strong>基金管理：</strong>管理投资组合或集体投资计划（第9类）</li>
+                <li><strong>企业融资咨询：</strong>就IPO、并购等企业交易提供意见（第6类）</li>
+                <li><strong>虚拟资产服务：</strong>运营虚拟资产交易平台（VATP制度下的第1类及/或第7类）</li>
+            </ul>
+
+            <h2>5. 何时需要保监局牌照？</h2>
+            <ul>
+                <li><strong>保险经纪：</strong>作为客户与保险公司之间的中介安排保险保障</li>
+                <li><strong>保险代理：</strong>代表一家或多家保险公司分销其产品</li>
+                <li><strong>就保险提供意见：</strong>就保险产品提供建议</li>
+            </ul>
+
+            <h2>6. 两种牌照均可能适用的场景</h2>
+            <h3>财富管理和财务规划</h3>
+            <p>提供全面财富管理服务的企业可能同时就证券（如股票、债券和投资基金）和保险产品（如人寿保险和年金）向客户提供意见。在这种情况下，证券相关活动需要证监会第1类及/或第4类牌照，而保险相关活动则需要保监局的保险经纪或代理牌照。</p>
+            <h3>分销投资相连保险产品（ILAS）</h3>
+            <p>投资相连寿险计划（ILAS）是具有投资成分的保险产品。虽然ILAS产品本质上是受保监局规管的保险合约，但投资成分可能触发证监会的监管要求。</p>
+            <h3>多元服务金融集团</h3>
+            <p>提供一系列服务的金融集团——包括证券交易、资产管理和保险经纪——通常需要设立独立的持牌实体或取得多种牌照。</p>
+
+            <h2>7. 资本要求比较</h2>
+            <h3>证监会资本要求</h3>
+            <table class="info-table">
+                <tr>
+                    <th>受规管活动类型</th>
+                    <th>最低缴足股本</th>
+                    <th>最低速动资金</th>
+                </tr>
+                <tr>
+                    <td>第1类（证券交易）</td>
+                    <td>港币5,000,000元</td>
+                    <td>港币3,000,000元</td>
+                </tr>
+                <tr>
+                    <td>第4类（就证券提供意见）</td>
+                    <td>港币500,000元</td>
+                    <td>港币100,000元</td>
+                </tr>
+                <tr>
+                    <td>第9类（资产管理）</td>
+                    <td>港币5,000,000元</td>
+                    <td>港币3,000,000元（仅管理专业投资者资产则为港币100,000元）</td>
+                </tr>
+            </table>
+            <h3>保监局资本要求</h3>
+            <table class="info-table">
+                <tr>
+                    <th>牌照类型</th>
+                    <th>最低缴足股本</th>
+                    <th>最低净资产</th>
+                </tr>
+                <tr>
+                    <td>保险经纪公司</td>
+                    <td>港币500,000元</td>
+                    <td>港币500,000元</td>
+                </tr>
+            </table>
+
+            <h2>8. 时间线比较</h2>
+            <table class="info-table">
+                <tr>
+                    <th>方面</th>
+                    <th>证监会</th>
+                    <th>保监局</th>
+                </tr>
+                <tr>
+                    <td>一般申请处理</td>
+                    <td>4-8个月</td>
+                    <td>3-6个月</td>
+                </tr>
+                <tr>
+                    <td>申请前准备</td>
+                    <td>2-4个月</td>
+                    <td>1-3个月</td>
+                </tr>
+                <tr>
+                    <td>总时间（准备+审批）</td>
+                    <td>6-12个月</td>
+                    <td>4-9个月</td>
+                </tr>
+            </table>
+
+            <h2>9. 双重持牌考虑</h2>
+            <ul>
+                <li><strong>公司架构：</strong>您可以选择将两个牌照放在同一实体中或设立独立实体</li>
+                <li><strong>主要人员：</strong>担任负责人的个人如果监督两类受规管活动，可能需要持有两个监管机构的资格和牌照</li>
+                <li><strong>合规：</strong>双重持牌企业必须同时遵守证监会和保监局的监管要求</li>
+                <li><strong>资本要求：</strong>如果同一实体持有两个牌照，将适用较高的资本要求</li>
+                <li><strong>成本：</strong>双重持牌涉及更高的设立和持续成本</li>
+            </ul>
+
+            <h2>10. 决策框架：您需要哪种牌照？</h2>
+            <ol>
+                <li><strong>识别您的活动：</strong>列出您的业务将在香港从事的所有受规管活动</li>
+                <li><strong>分类每项活动：</strong>确定每项活动属于SFO（证监会规管）还是IO（保监局规管）</li>
+                <li><strong>确定每种牌照的范围：</strong>对于证监会规管的活动，确定具体需要哪种类型</li>
+                <li><strong>评估您的资源：</strong>评估您是否有足够的资本、人员、系统和运营能力</li>
+                <li><strong>寻求专业意见：</strong>鉴于香港监管环境的复杂性，强烈建议聘用经验丰富的监管顾问</li>
+            </ol>
+
+            <div class="key-takeaways">
+                <h3>重点摘要</h3>
+                <ul>
+                    <li>证监会规管证券、期货及资产管理活动；保监局规管保险中介活动</li>
+                    <li>证监会资本要求通常较高（交易/资产管理为港币500万元），保监局相对较低（经纪公司为港币50万元）</li>
+                    <li>财富管理、ILAS分销及多元服务金融集团可能需要双重持牌</li>
+                    <li>证监会申请总计通常需时6-12个月；保监局申请通常需时4-9个月</li>
+                    <li>双重持牌企业在合规、汇报及主要人员要求方面面临更高复杂性</li>
+                    <li>强烈建议寻求专业咨询支援</li>
+                </ul>
+            </div>
+
+            <div class="cta-box">
+                <h3>不确定需要哪种牌照？</h3>
+                <p>我们的团队专精于证监会及保监局的牌照服务。让我们帮助您确定正确的牌照路径，并指导您完成申请流程。</p>
+                <a href="https://wa.me/85262528348">通过WhatsApp联系我们</a>
+            </div>
+
+            <div class="related-articles">
+                <h3>相关文章</h3>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <h4><a href="ia-insurance-broker-licence.html">如何申请保险经纪公司牌照</a></h4>
+                        <p>保监局经纪牌照申请流程的完整逐步指南。</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="overseas-firms-hong-kong.html">海外金融机构如何拓展香港业务</a></h4>
+                        <p>国际金融机构在香港设立据点的指南。</p>
+                    </div>
+                    <div class="related-card">
+                        <h4><a href="compliance-department-setup.html">如何设立合规部门</a></h4>
+                        <p>为证监会或保监局持牌机构建立有效的合规职能。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="blog-footer">
+    <div class="disclaimer"><strong>Disclaimer:</strong> This article is for general informational purposes only and does not constitute legal, financial, or professional advice. Regulations and requirements may change. Please consult with qualified professionals or the relevant regulatory authorities for advice specific to your circumstances.</div>
+    <div class="copyright">&copy; 2026 David Licence Consulting. All rights reserved.</div>
+</footer>
+
+<a href="https://wa.me/85262528348" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958C9.72 30.986 12.738 32 16.004 32 24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.534 22.606c-.398 1.12-1.984 2.05-3.252 2.32-.868.184-2 .332-5.816-1.25-4.886-2.026-8.032-6.97-8.276-7.296-.234-.326-1.966-2.62-1.966-4.998s1.244-3.546 1.686-4.032c.398-.436 1.05-.636 1.672-.636.202 0 .384.01.548.018.442.02.664.046.956.742.364.868 1.25 3.044 1.358 3.266.11.222.218.52.068.832-.14.318-.264.514-.486.786-.222.272-.432.48-.654.738-.202.234-.43.484-.174.926.256.436 1.138 1.878 2.444 3.042 1.68 1.496 3.094 1.96 3.534 2.178.442.218.698.182.956-.11.264-.298 1.128-1.314 1.43-1.766.294-.452.594-.374.998-.222.41.148 2.578 1.216 3.02 1.438.442.222.736.332.846.518.108.186.108 1.082-.29 2.202z"/></svg>
+</a>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.getElementById('content-' + lang).classList.add('active');
+    document.querySelectorAll('.lang-switcher button').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+}
+</script>
+<script src="../js/main.js"></script>
+</body>
+</html>

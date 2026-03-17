@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Blog &ndash; Insights &amp; Resources | David Licence Consulting</title>
+    <meta name="title" content="Blog – Insights & Resources | David Licence Consulting">
+    <meta name="description" content="Expert insights on SFC and IA licensing in Hong Kong. Guides on Type 1, Type 9 licences, insurance broker licensing, compliance, AML/CFT, and regulatory trends. Free resources from David Licence Consulting.">
+    <meta name="keywords" content="SFC licence blog, IA licence guide, Hong Kong licensing articles, securities licence insights, insurance broker licence guide, compliance resources, AML CFT Hong Kong, regulatory trends 2026, 證監會牌照指南, 保監局牌照資訊, 香港牌照申請攻略">
+    <meta name="author" content="David Licence Consulting">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.davidconsulting.hk/blog/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.davidconsulting.hk/blog/">
+    <meta property="og:title" content="Blog – Insights & Resources | David Licence Consulting">
+    <meta property="og:description" content="Expert insights on SFC and IA licensing in Hong Kong. Guides, compliance tips, and regulatory trends from David Licence Consulting.">
+    <meta property="og:image" content="https://www.davidconsulting.hk/images/og-image.jpg">
+    <meta property="og:locale" content="en_HK">
+    <meta property="og:locale:alternate" content="zh_HK">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.davidconsulting.hk/blog/">
+    <meta name="twitter:title" content="Blog – Insights & Resources | David Licence Consulting">
+    <meta name="twitter:description" content="Expert insights on SFC and IA licensing in Hong Kong. Guides, compliance tips, and regulatory trends.">
+    <meta name="twitter:image" content="https://www.davidconsulting.hk/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "David Licence Consulting Blog",
+        "description": "Expert insights on SFC and IA licensing in Hong Kong",
+        "url": "https://www.davidconsulting.hk/blog/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "David Licence Consulting",
+            "url": "https://www.davidconsulting.hk"
+        },
+        "inLanguage": ["en", "zh-Hant", "zh-Hans"]
+    }
+    </script>
+
+    <!-- Blog Index Page Styles -->
+    <style>
+        /* ===== BLOG INDEX HERO ===== */
+        .blog-hero {
+            background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 50%, var(--color-teal-dark) 100%);
+            padding: 8rem 0 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .blog-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(15, 107, 99, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(182, 138, 60, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .blog-hero .container { position: relative; z-index: 1; }
+        .blog-hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            color: var(--color-white);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .blog-hero .hero-sub {
+            font-family: var(--font-body);
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ===== FILTER SECTION ===== */
+        .blog-filters-section {
+            background: var(--color-white);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 72px;
+            z-index: 50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .blog-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        .filter-btn {
+            background: var(--color-light-gray);
+            border: 1px solid var(--color-border);
+            color: var(--color-slate);
+            padding: 0.5rem 1.25rem;
+            border-radius: 100px;
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            white-space: nowrap;
+        }
+        .filter-btn:hover {
+            border-color: var(--color-teal);
+            color: var(--color-teal);
+            background: rgba(15, 107, 99, 0.05);
+        }
+        .filter-btn.active {
+            background: var(--color-teal);
+            border-color: var(--color-teal);
+            color: var(--color-white);
+        }
+
+        /* ===== ARTICLE GRID ===== */
+        .blog-grid-section {
+            padding: 3rem 0 4rem;
+            background: var(--color-light-gray);
+            min-height: 60vh;
+        }
+        .article-count {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--color-muted);
+            font-size: 0.95rem;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        /* ===== ARTICLE CARD ===== */
+        .article-card {
+            background: var(--color-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        .article-card-body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .article-card-category {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.75rem;
+            width: fit-content;
+        }
+        .category-sfc {
+            background: rgba(15, 107, 99, 0.1);
+            color: var(--color-teal);
+        }
+        .category-ia {
+            background: rgba(182, 138, 60, 0.12);
+            color: var(--color-bronze);
+        }
+        .category-compliance {
+            background: rgba(15, 35, 56, 0.08);
+            color: var(--color-navy);
+        }
+        .category-setup {
+            background: rgba(100, 116, 139, 0.1);
+            color: var(--color-slate);
+        }
+        .category-cross {
+            background: rgba(15, 107, 99, 0.08);
+            color: var(--color-teal-dark);
+        }
+        .category-market {
+            background: rgba(182, 138, 60, 0.08);
+            color: #8B6914;
+        }
+        .article-card-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-dark-text);
+            line-height: 1.4;
+            margin-bottom: 0.75rem;
+        }
+        .article-card-title a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+        .article-card-title a:hover {
+            color: var(--color-teal);
+        }
+        .article-card-excerpt {
+            font-size: 0.9rem;
+            color: var(--color-muted);
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+            flex: 1;
+        }
+        .article-card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.8rem;
+            color: var(--color-muted);
+        }
+        .article-card-meta .meta-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .article-card-meta .meta-left span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .article-card-meta .read-more {
+            color: var(--color-teal);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+        .article-card-meta .read-more:hover {
+            color: var(--color-teal-dark);
+        }
+
+        /* ===== CTA SECTION ===== */
+        .blog-cta-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+            text-align: center;
+        }
+        .blog-cta-section h2 {
+            font-family: var(--font-heading);
+            font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+            color: var(--color-white);
+            margin-bottom: 1rem;
+        }
+        .blog-cta-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.05rem;
+            max-width: 550px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        .blog-cta-section .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--color-whatsapp);
+            color: var(--color-white);
+            padding: 0.9rem 2rem;
+            border-radius: 100px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.25s, transform 0.25s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        .blog-cta-section .btn-whatsapp:hover {
+            background: var(--color-whatsapp-dark);
+            transform: translateY(-2px);
+        }
+
+        /* ===== NEWSLETTER / UPDATES SECTION ===== */
+        .blog-updates-section {
+            padding: 3.5rem 0;
+            background: var(--color-ivory);
+            text-align: center;
+        }
+        .blog-updates-section .updates-inner {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .blog-updates-section h3 {
+            font-family: var(--font-heading);
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            color: var(--color-navy);
+            margin-bottom: 0.75rem;
+        }
+        .blog-updates-section p {
+            color: var(--color-slate);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .blog-updates-section .btn-updates {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-navy);
+            color: var(--color-white);
+            padding: 0.75rem 1.75rem;
+            border-radius: 100px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.25s, transform 0.25s;
+        }
+        .blog-updates-section .btn-updates:hover {
+            background: var(--color-navy-light);
+            transform: translateY(-2px);
+        }
+
+        /* ===== NO RESULTS MESSAGE ===== */
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--color-muted);
+            font-size: 1.1rem;
+            display: none;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .blog-hero {
+                padding: 7rem 0 3rem;
+            }
+            .blog-filters-section {
+                top: 60px;
+                padding: 1rem 0;
+            }
+            .blog-filters {
+                gap: 0.4rem;
+            }
+            .filter-btn {
+                padding: 0.4rem 0.9rem;
+                font-size: 0.8rem;
+            }
+            .blog-grid-section {
+                padding: 2rem 0 3rem;
+            }
+        }
+        @media (max-width: 640px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+            .blog-hero {
+                padding: 6.5rem 0 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+         HEADER / NAVIGATION
+         ============================================================ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <span class="logo-text" data-lang="en">David Licence Consulting</span>
+                <span class="logo-text" data-lang="tc" style="display:none;">大衛牌照顧問</span>
+                <span class="logo-text" data-lang="sc" style="display:none;">大卫牌照顾问</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">
+                        <span data-lang="en">Home</span>
+                        <span data-lang="tc" style="display:none;">首頁</span>
+                        <span data-lang="sc" style="display:none;">首页</span>
+                    </a></li>
+                    <li><a href="../index.html#sfc">
+                        <span data-lang="en">SFC Licensing</span>
+                        <span data-lang="tc" style="display:none;">證監會牌照</span>
+                        <span data-lang="sc" style="display:none;">证监会牌照</span>
+                    </a></li>
+                    <li><a href="../index.html#ia">
+                        <span data-lang="en">IA Licensing</span>
+                        <span data-lang="tc" style="display:none;">保監局牌照</span>
+                        <span data-lang="sc" style="display:none;">保监局牌照</span>
+                    </a></li>
+                    <li><a href="../index.html#process">
+                        <span data-lang="en">Our Process</span>
+                        <span data-lang="tc" style="display:none;">服務流程</span>
+                        <span data-lang="sc" style="display:none;">服务流程</span>
+                    </a></li>
+                    <li><a href="../index.html#blog" class="active">
+                        <span data-lang="en">Blog</span>
+                        <span data-lang="tc" style="display:none;">資訊</span>
+                        <span data-lang="sc" style="display:none;">资讯</span>
+                    </a></li>
+                    <li><a href="../index.html#about">
+                        <span data-lang="en">About</span>
+                        <span data-lang="tc" style="display:none;">關於我們</span>
+                        <span data-lang="sc" style="display:none;">关于我们</span>
+                    </a></li>
+                    <li><a href="../index.html#contact">
+                        <span data-lang="en">Contact</span>
+                        <span data-lang="tc" style="display:none;">聯繫我們</span>
+                        <span data-lang="sc" style="display:none;">联系我们</span>
+                    </a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-btn active" data-lang-switch="en">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang-switch="tc">繁</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang-switch="sc">简</button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         BLOG HERO
+         ============================================================ -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>
+                <span data-lang="en">Insights &amp; Resources</span>
+                <span data-lang="tc" style="display:none;">洞察與資源</span>
+                <span data-lang="sc" style="display:none;">洞察与资源</span>
+            </h1>
+            <p class="hero-sub">
+                <span data-lang="en">Expert analysis on SFC and IA licensing in Hong Kong</span>
+                <span data-lang="tc" style="display:none;">香港證監會及保監局牌照的專業分析與指南</span>
+                <span data-lang="sc" style="display:none;">香港证监会及保监局牌照的专业分析与指南</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CATEGORY FILTERS
+         ============================================================ -->
+    <div class="blog-filters-section">
+        <div class="container">
+            <div class="blog-filters" data-blog-filters>
+                <button class="filter-btn active" data-filter="all">
+                    <span data-lang="en">All</span>
+                    <span data-lang="tc" style="display:none;">全部</span>
+                    <span data-lang="sc" style="display:none;">全部</span>
+                </button>
+                <button class="filter-btn" data-filter="sfc">
+                    <span data-lang="en">SFC Licensing</span>
+                    <span data-lang="tc" style="display:none;">證監會牌照</span>
+                    <span data-lang="sc" style="display:none;">证监会牌照</span>
+                </button>
+                <button class="filter-btn" data-filter="ia">
+                    <span data-lang="en">IA Licensing</span>
+                    <span data-lang="tc" style="display:none;">保監局牌照</span>
+                    <span data-lang="sc" style="display:none;">保监局牌照</span>
+                </button>
+                <button class="filter-btn" data-filter="compliance">
+                    <span data-lang="en">Compliance</span>
+                    <span data-lang="tc" style="display:none;">合規</span>
+                    <span data-lang="sc" style="display:none;">合规</span>
+                </button>
+                <button class="filter-btn" data-filter="setup">
+                    <span data-lang="en">Setup</span>
+                    <span data-lang="tc" style="display:none;">設立</span>
+                    <span data-lang="sc" style="display:none;">设立</span>
+                </button>
+                <button class="filter-btn" data-filter="market">
+                    <span data-lang="en">Market Insights</span>
+                    <span data-lang="tc" style="display:none;">市場洞察</span>
+                    <span data-lang="sc" style="display:none;">市场洞察</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         BLOG ARTICLE GRID
+         Sorted by date, newest first
+         ============================================================ -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <p class="article-count">
+                <span data-lang="en">Showing <strong class="visible-count">24</strong> articles</span>
+                <span data-lang="tc" style="display:none;">顯示 <strong class="visible-count">24</strong> 篇文章</span>
+                <span data-lang="sc" style="display:none;">显示 <strong class="visible-count">24</strong> 篇文章</span>
+            </p>
+
+            <div class="blog-grid">
+
+                <!-- 1. Compliance Department Setup - 15 Mar 2026 -->
+                <article class="article-card fade-up" data-category="compliance">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-compliance">
+                            <span data-lang="en">Compliance</span>
+                            <span data-lang="tc" style="display:none;">合規</span>
+                            <span data-lang="sc" style="display:none;">合规</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="compliance-department-setup.html">
+                                <span data-lang="en">Compliance Department Setup</span>
+                                <span data-lang="tc" style="display:none;">合規部門設立指南</span>
+                                <span data-lang="sc" style="display:none;">合规部门设立指南</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">How to build an effective compliance department for your licensed firm. Covers staffing, policies, monitoring systems, and regulatory expectations for SFC and IA regulated entities.</span>
+                            <span data-lang="tc" style="display:none;">如何為持牌公司建立有效的合規部門。涵蓋人員配置、政策制定、監控系統以及證監會和保監局對持牌機構的監管期望。</span>
+                            <span data-lang="sc" style="display:none;">如何为持牌公司建立有效的合规部门。涵盖人员配置、政策制定、监控系统以及证监会和保监局对持牌机构的监管期望。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 15 Mar 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 10 min</span>
+                            </div>
+                            <a href="compliance-department-setup.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. Regulatory Trends 2026 - 12 Mar 2026 -->
+                <article class="article-card fade-up" data-category="market">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-market">
+                            <span data-lang="en">Market Insights</span>
+                            <span data-lang="tc" style="display:none;">市場洞察</span>
+                            <span data-lang="sc" style="display:none;">市场洞察</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="regulatory-trends-2026.html">
+                                <span data-lang="en">Regulatory Trends 2026</span>
+                                <span data-lang="tc" style="display:none;">2026年監管趨勢</span>
+                                <span data-lang="sc" style="display:none;">2026年监管趋势</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Key regulatory developments shaping Hong Kong's financial services landscape in 2026. Analysis of SFC and IA policy directions, emerging compliance themes, and what licensed firms should prepare for.</span>
+                            <span data-lang="tc" style="display:none;">2026年塑造香港金融服務格局的關鍵監管發展。分析證監會及保監局政策方向、新興合規主題，以及持牌機構應如何準備。</span>
+                            <span data-lang="sc" style="display:none;">2026年塑造香港金融服务格局的关键监管发展。分析证监会及保监局政策方向、新兴合规主题，以及持牌机构应如何准备。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 12 Mar 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 12 min</span>
+                            </div>
+                            <a href="regulatory-trends-2026.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. VASP Licensing in Hong Kong - 8 Mar 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="vasp-licence-hong-kong.html">
+                                <span data-lang="en">VASP Licensing in Hong Kong</span>
+                                <span data-lang="tc" style="display:none;">香港虛擬資產服務提供者牌照</span>
+                                <span data-lang="sc" style="display:none;">香港虚拟资产服务提供者牌照</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Comprehensive guide to obtaining a Virtual Asset Service Provider licence in Hong Kong. Covers the SFC's VASP regime, application requirements, AML/CFT obligations, and operational standards.</span>
+                            <span data-lang="tc" style="display:none;">獲取香港虛擬資產服務提供者牌照的全面指南。涵蓋證監會VASP制度、申請要求、反洗錢及反恐融資義務及營運標準。</span>
+                            <span data-lang="sc" style="display:none;">获取香港虚拟资产服务提供者牌照的全面指南。涵盖证监会VASP制度、申请要求、反洗钱及反恐融资义务及运营标准。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 8 Mar 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 14 min</span>
+                            </div>
+                            <a href="vasp-licence-hong-kong.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. AML/CFT Compliance Guidelines - 5 Mar 2026 -->
+                <article class="article-card fade-up" data-category="compliance">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-compliance">
+                            <span data-lang="en">Compliance</span>
+                            <span data-lang="tc" style="display:none;">合規</span>
+                            <span data-lang="sc" style="display:none;">合规</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="aml-cft-guidelines.html">
+                                <span data-lang="en">AML/CFT Compliance Guidelines</span>
+                                <span data-lang="tc" style="display:none;">反洗錢/反恐融資合規指引</span>
+                                <span data-lang="sc" style="display:none;">反洗钱/反恐融资合规指引</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Essential guide to Anti-Money Laundering and Counter-Terrorist Financing compliance for licensed firms in Hong Kong. Customer due diligence, suspicious transaction reporting, and record-keeping obligations.</span>
+                            <span data-lang="tc" style="display:none;">香港持牌公司反洗錢及反恐融資合規的必備指南。涵蓋客戶盡職調查、可疑交易報告及記錄保存義務。</span>
+                            <span data-lang="sc" style="display:none;">香港持牌公司反洗钱及反恐融资合规的必备指南。涵盖客户尽职调查、可疑交易报告及记录保存义务。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 5 Mar 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 11 min</span>
+                            </div>
+                            <a href="aml-cft-guidelines.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Cybersecurity Guidelines - 1 Mar 2026 -->
+                <article class="article-card fade-up" data-category="compliance">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-compliance">
+                            <span data-lang="en">Compliance</span>
+                            <span data-lang="tc" style="display:none;">合規</span>
+                            <span data-lang="sc" style="display:none;">合规</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="cybersecurity-guidelines.html">
+                                <span data-lang="en">Cybersecurity Guidelines</span>
+                                <span data-lang="tc" style="display:none;">網絡安全指引</span>
+                                <span data-lang="sc" style="display:none;">网络安全指引</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">SFC and IA cybersecurity requirements for licensed corporations and insurers. Covers data protection, incident response, system security, and regulatory expectations for IT governance.</span>
+                            <span data-lang="tc" style="display:none;">證監會及保監局對持牌法團和保險公司的網絡安全要求。涵蓋數據保護、事件應對、系統安全及IT管治的監管期望。</span>
+                            <span data-lang="sc" style="display:none;">证监会及保监局对持牌法团和保险公司的网络安全要求。涵盖数据保护、事件应对、系统安全及IT管治的监管期望。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 1 Mar 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 9 min</span>
+                            </div>
+                            <a href="cybersecurity-guidelines.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. SFC Routine Inspection Preparation - 28 Feb 2026 -->
+                <article class="article-card fade-up" data-category="compliance">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-compliance">
+                            <span data-lang="en">Compliance</span>
+                            <span data-lang="tc" style="display:none;">合規</span>
+                            <span data-lang="sc" style="display:none;">合规</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="sfc-routine-inspection.html">
+                                <span data-lang="en">SFC Routine Inspection Preparation</span>
+                                <span data-lang="tc" style="display:none;">證監會例行檢查準備</span>
+                                <span data-lang="sc" style="display:none;">证监会例行检查准备</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">How to prepare for an SFC routine inspection. Common focus areas, documentation requirements, staff interview preparation, and best practices to ensure a smooth inspection process.</span>
+                            <span data-lang="tc" style="display:none;">如何為證監會例行檢查做好準備。常見檢查重點、文件要求、員工面試準備，以及確保檢查順利進行的最佳做法。</span>
+                            <span data-lang="sc" style="display:none;">如何为证监会例行检查做好准备。常见检查重点、文件要求、员工面试准备，以及确保检查顺利进行的最佳做法。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 28 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 10 min</span>
+                            </div>
+                            <a href="sfc-routine-inspection.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. HKSI LE Exam Complete Guide - 25 Feb 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="hksi-le-exam-guide.html">
+                                <span data-lang="en">HKSI LE Exam Complete Guide</span>
+                                <span data-lang="tc" style="display:none;">HKSI資格考試完全指南</span>
+                                <span data-lang="sc" style="display:none;">HKSI资格考试完全指南</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Everything you need to know about the HKSI Licensing Examination. Exam papers, study strategies, pass rates, exemptions, and how each paper maps to SFC regulated activities.</span>
+                            <span data-lang="tc" style="display:none;">HKSI牌照考試你需要知道的一切。考試卷別、備考策略、通過率、豁免條件，以及各考卷與證監會規管活動的對應關係。</span>
+                            <span data-lang="sc" style="display:none;">HKSI牌照考试你需要知道的一切。考试卷别、备考策略、通过率、豁免条件，以及各考卷与证监会规管活动的对应关系。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 25 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 13 min</span>
+                            </div>
+                            <a href="hksi-le-exam-guide.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Overseas Firms Expanding to HK - 22 Feb 2026 -->
+                <article class="article-card fade-up" data-category="setup">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-setup">
+                            <span data-lang="en">Setup</span>
+                            <span data-lang="tc" style="display:none;">設立</span>
+                            <span data-lang="sc" style="display:none;">设立</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="overseas-firms-hong-kong.html">
+                                <span data-lang="en">Overseas Firms Expanding to HK</span>
+                                <span data-lang="tc" style="display:none;">海外公司拓展香港市場</span>
+                                <span data-lang="sc" style="display:none;">海外公司拓展香港市场</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">A strategic guide for overseas financial firms looking to establish a licensed presence in Hong Kong. Entity structuring, regulatory pathway, key person requirements, and market entry considerations.</span>
+                            <span data-lang="tc" style="display:none;">為有意在香港設立持牌業務的海外金融機構提供的策略指南。涵蓋實體架構、監管路徑、關鍵人員要求及市場進入考量。</span>
+                            <span data-lang="sc" style="display:none;">为有意在香港设立持牌业务的海外金融机构提供的策略指南。涵盖实体架构、监管路径、关键人员要求及市场进入考量。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 22 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 11 min</span>
+                            </div>
+                            <a href="overseas-firms-hong-kong.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. MIC Regime Explained - 20 Feb 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="mic-regime-explained.html">
+                                <span data-lang="en">MIC Regime Explained</span>
+                                <span data-lang="tc" style="display:none;">經理人主管制度解析</span>
+                                <span data-lang="sc" style="display:none;">经理人主管制度解析</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Understanding the Manager-In-Charge regime introduced by the SFC. Roles, responsibilities, core functions, and practical guidance on compliance with the MIC framework.</span>
+                            <span data-lang="tc" style="display:none;">了解證監會推出的經理人主管制度。角色、職責、核心職能，以及MIC框架合規的實務指引。</span>
+                            <span data-lang="sc" style="display:none;">了解证监会推出的经理人主管制度。角色、职责、核心职能，以及MIC框架合规的实务指引。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 20 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 8 min</span>
+                            </div>
+                            <a href="mic-regime-explained.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. IIQE Examination Guide - 20 Feb 2026 -->
+                <article class="article-card fade-up" data-category="ia">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-ia">
+                            <span data-lang="en">IA Licensing</span>
+                            <span data-lang="tc" style="display:none;">保監局牌照</span>
+                            <span data-lang="sc" style="display:none;">保监局牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="iiqe-exam-guide.html">
+                                <span data-lang="en">IIQE Examination Guide</span>
+                                <span data-lang="tc" style="display:none;">IIQE保險中介人考試指南</span>
+                                <span data-lang="sc" style="display:none;">IIQE保险中介人考试指南</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Complete guide to the Insurance Intermediaries Qualifying Examination. Paper structure, study tips, exemptions, and how IIQE results relate to your IA licensing application.</span>
+                            <span data-lang="tc" style="display:none;">保險中介人資格考試完全指南。考卷結構、備考技巧、豁免條件，以及IIQE成績與保監局牌照申請的關係。</span>
+                            <span data-lang="sc" style="display:none;">保险中介人资格考试完全指南。考卷结构、备考技巧、豁免条件，以及IIQE成绩与保监局牌照申请的关系。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 20 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 10 min</span>
+                            </div>
+                            <a href="iiqe-exam-guide.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. Liquid Capital Requirements for SFC - 15 Feb 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="liquid-capital-requirements.html">
+                                <span data-lang="en">Liquid Capital Requirements for SFC</span>
+                                <span data-lang="tc" style="display:none;">證監會速動資金要求</span>
+                                <span data-lang="sc" style="display:none;">证监会速动资金要求</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Detailed breakdown of liquid capital requirements for SFC-licensed corporations. Minimum paid-up capital, ongoing financial requirements, FRR calculations, and common compliance pitfalls.</span>
+                            <span data-lang="tc" style="display:none;">證監會持牌法團速動資金要求的詳細分析。最低實收資本、持續財務要求、FRR計算及常見合規問題。</span>
+                            <span data-lang="sc" style="display:none;">证监会持牌法团速动资金要求的详细分析。最低实收资本、持续财务要求、FRR计算及常见合规问题。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 15 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 9 min</span>
+                            </div>
+                            <a href="liquid-capital-requirements.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12. Buying vs Applying for SFC Licence - 12 Feb 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="buying-sfc-licensed-company.html">
+                                <span data-lang="en">Buying vs Applying for SFC Licence</span>
+                                <span data-lang="tc" style="display:none;">購買與申請證監會牌照比較</span>
+                                <span data-lang="sc" style="display:none;">购买与申请证监会牌照比较</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Should you acquire an existing SFC-licensed company or apply for a new licence? Pros, cons, costs, timelines, due diligence requirements, and SFC's change of control process.</span>
+                            <span data-lang="tc" style="display:none;">應該收購現有持牌公司還是申請新牌照？優缺點、費用、時間線、盡職調查要求及證監會的控制權變更流程。</span>
+                            <span data-lang="sc" style="display:none;">应该收购现有持牌公司还是申请新牌照？优缺点、费用、时间线、尽职调查要求及证监会的控制权变更流程。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 12 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 12 min</span>
+                            </div>
+                            <a href="buying-sfc-licensed-company.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13. SFC vs IA: Which Licence? - 10 Feb 2026 -->
+                <article class="article-card fade-up" data-category="cross">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-cross">
+                            <span data-lang="en">SFC &amp; IA</span>
+                            <span data-lang="tc" style="display:none;">證監會及保監局</span>
+                            <span data-lang="sc" style="display:none;">证监会及保监局</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="sfc-vs-ia-licensing.html">
+                                <span data-lang="en">SFC vs IA: Which Licence?</span>
+                                <span data-lang="tc" style="display:none;">證監會與保監局：選擇哪個牌照？</span>
+                                <span data-lang="sc" style="display:none;">证监会与保监局：选择哪个牌照？</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">A comparative analysis of SFC and IA licensing regimes. Understand the differences in scope, requirements, costs, and timelines to determine the right licence for your business.</span>
+                            <span data-lang="tc" style="display:none;">證監會與保監局牌照制度的比較分析。了解範圍、要求、費用和時間線的差異，確定適合您業務的牌照。</span>
+                            <span data-lang="sc" style="display:none;">证监会与保监局牌照制度的比较分析。了解范围、要求、费用和时间线的差异，确定适合您业务的牌照。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 10 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 10 min</span>
+                            </div>
+                            <a href="sfc-vs-ia-licensing.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14. SFC Application Timeline & Fees - 8 Feb 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="sfc-application-timeline.html">
+                                <span data-lang="en">SFC Application Timeline &amp; Fees</span>
+                                <span data-lang="tc" style="display:none;">證監會申請時間線與費用</span>
+                                <span data-lang="sc" style="display:none;">证监会申请时间线与费用</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Detailed breakdown of the SFC licensing application timeline from preparation to approval. Application fees, annual fees, expected processing times, and strategies to avoid delays.</span>
+                            <span data-lang="tc" style="display:none;">從準備到獲批的證監會牌照申請時間線詳細分析。申請費用、年費、預期處理時間及避免延誤的策略。</span>
+                            <span data-lang="sc" style="display:none;">从准备到获批的证监会牌照申请时间线详细分析。申请费用、年费、预期处理时间及避免延误的策略。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 8 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 8 min</span>
+                            </div>
+                            <a href="sfc-application-timeline.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 15. Fit and Proper Criteria Guide - 5 Feb 2026 -->
+                <article class="article-card fade-up" data-category="compliance">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-compliance">
+                            <span data-lang="en">Compliance</span>
+                            <span data-lang="tc" style="display:none;">合規</span>
+                            <span data-lang="sc" style="display:none;">合规</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="fit-and-proper-guidelines.html">
+                                <span data-lang="en">Fit and Proper Criteria Guide</span>
+                                <span data-lang="tc" style="display:none;">適當人選準則指南</span>
+                                <span data-lang="sc" style="display:none;">适当人选准则指南</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Understanding the fit and proper requirements for individuals seeking licensing from the SFC or IA. Competence, integrity, financial soundness, and how regulators assess applications.</span>
+                            <span data-lang="tc" style="display:none;">了解證監會或保監局牌照申請人的適當人選要求。勝任能力、誠信、財務穩健性，以及監管機構如何評估申請。</span>
+                            <span data-lang="sc" style="display:none;">了解证监会或保监局牌照申请人的适当人选要求。胜任能力、诚信、财务稳健性，以及监管机构如何评估申请。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 5 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 9 min</span>
+                            </div>
+                            <a href="fit-and-proper-guidelines.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 16. SFC Responsible Officer Requirements - 1 Feb 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="responsible-officer-requirements.html">
+                                <span data-lang="en">SFC Responsible Officer Requirements</span>
+                                <span data-lang="tc" style="display:none;">證監會負責人員要求</span>
+                                <span data-lang="sc" style="display:none;">证监会负责人员要求</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Everything about the SFC Responsible Officer role. Eligibility criteria, experience requirements, supervisory duties, and common reasons for RO application rejections.</span>
+                            <span data-lang="tc" style="display:none;">關於證監會負責人員角色的一切。資格標準、經驗要求、監督職責及RO申請被拒絕的常見原因。</span>
+                            <span data-lang="sc" style="display:none;">关于证监会负责人员角色的一切。资格标准、经验要求、监督职责及RO申请被拒绝的常见原因。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 1 Feb 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 10 min</span>
+                            </div>
+                            <a href="responsible-officer-requirements.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 17. IA Technical Representative Guide - 28 Jan 2026 -->
+                <article class="article-card fade-up" data-category="ia">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-ia">
+                            <span data-lang="en">IA Licensing</span>
+                            <span data-lang="tc" style="display:none;">保監局牌照</span>
+                            <span data-lang="sc" style="display:none;">保监局牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="ia-technical-representative.html">
+                                <span data-lang="en">IA Technical Representative Guide</span>
+                                <span data-lang="tc" style="display:none;">保監局技術代表指南</span>
+                                <span data-lang="sc" style="display:none;">保监局技术代表指南</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Guide to becoming an IA Technical Representative. Qualification requirements, registration process, ongoing CPD obligations, and responsibilities within an insurance broker company.</span>
+                            <span data-lang="tc" style="display:none;">成為保監局技術代表的指南。資格要求、註冊流程、持續專業發展義務及在保險經紀公司中的職責。</span>
+                            <span data-lang="sc" style="display:none;">成为保监局技术代表的指南。资格要求、注册流程、持续专业发展义务及在保险经纪公司中的职责。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 28 Jan 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 8 min</span>
+                            </div>
+                            <a href="ia-technical-representative.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 18. SFC Type 9 Asset Management Licence Guide - 22 Jan 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="sfc-type-9-asset-management.html">
+                                <span data-lang="en">SFC Type 9 Asset Management Licence Guide</span>
+                                <span data-lang="tc" style="display:none;">證監會第9類資產管理牌照指南</span>
+                                <span data-lang="sc" style="display:none;">证监会第9类资产管理牌照指南</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Comprehensive guide to obtaining an SFC Type 9 (Asset Management) licence. Capital requirements, RO qualifications, investment restrictions, and practical application strategies.</span>
+                            <span data-lang="tc" style="display:none;">獲取證監會第9類（資產管理）牌照的全面指南。資本要求、負責人員資格、投資限制及實用申請策略。</span>
+                            <span data-lang="sc" style="display:none;">获取证监会第9类（资产管理）牌照的全面指南。资本要求、负责人员资格、投资限制及实用申请策略。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 22 Jan 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 14 min</span>
+                            </div>
+                            <a href="sfc-type-9-asset-management.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 19. Business Continuity Planning - 20 Jan 2026 -->
+                <article class="article-card fade-up" data-category="compliance">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-compliance">
+                            <span data-lang="en">Compliance</span>
+                            <span data-lang="tc" style="display:none;">合規</span>
+                            <span data-lang="sc" style="display:none;">合规</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="business-continuity-planning.html">
+                                <span data-lang="en">Business Continuity Planning</span>
+                                <span data-lang="tc" style="display:none;">業務持續性規劃</span>
+                                <span data-lang="sc" style="display:none;">业务持续性规划</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">How to develop a robust Business Continuity Plan for licensed financial firms. SFC and IA requirements, BCP components, testing protocols, and regulatory expectations.</span>
+                            <span data-lang="tc" style="display:none;">如何為持牌金融機構制定穩健的業務持續性計劃。證監會和保監局要求、BCP組成部分、測試協議及監管期望。</span>
+                            <span data-lang="sc" style="display:none;">如何为持牌金融机构制定稳健的业务持续性计划。证监会和保监局要求、BCP组成部分、测试协议及监管期望。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 20 Jan 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 9 min</span>
+                            </div>
+                            <a href="business-continuity-planning.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 20. Post-Licence Compliance Obligations - 18 Jan 2026 -->
+                <article class="article-card fade-up" data-category="compliance">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-compliance">
+                            <span data-lang="en">Compliance</span>
+                            <span data-lang="tc" style="display:none;">合規</span>
+                            <span data-lang="sc" style="display:none;">合规</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="post-licence-obligations.html">
+                                <span data-lang="en">Post-Licence Compliance Obligations</span>
+                                <span data-lang="tc" style="display:none;">持牌後合規義務</span>
+                                <span data-lang="sc" style="display:none;">持牌后合规义务</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Your compliance responsibilities after obtaining your licence. Ongoing reporting, annual returns, notification requirements, and how to maintain good standing with the SFC or IA.</span>
+                            <span data-lang="tc" style="display:none;">獲得牌照後的合規責任。持續報告、年度申報、通知要求，以及如何保持與證監會或保監局的良好關係。</span>
+                            <span data-lang="sc" style="display:none;">获得牌照后的合规责任。持续报告、年度申报、通知要求，以及如何保持与证监会或保监局的良好关系。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 18 Jan 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 11 min</span>
+                            </div>
+                            <a href="post-licence-obligations.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 21. Complete Guide to SFC Type 1 Licence - 15 Jan 2026 -->
+                <article class="article-card fade-up" data-category="sfc">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="sfc-type-1-licence-guide.html">
+                                <span data-lang="en">Complete Guide to SFC Type 1 Licence</span>
+                                <span data-lang="tc" style="display:none;">證監會第1類牌照完全指南</span>
+                                <span data-lang="sc" style="display:none;">证监会第1类牌照完全指南</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Everything you need to know about applying for an SFC Type 1 (Dealing in Securities) licence in Hong Kong. Eligibility criteria, capital requirements, RO requirements, and step-by-step application process.</span>
+                            <span data-lang="tc" style="display:none;">申請證監會第1類（證券交易）牌照你需要知道的一切。資格標準、資本要求、負責人員要求及分步申請流程。</span>
+                            <span data-lang="sc" style="display:none;">申请证监会第1类（证券交易）牌照你需要知道的一切。资格标准、资本要求、负责人员要求及分步申请流程。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 15 Jan 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 15 min</span>
+                            </div>
+                            <a href="sfc-type-1-licence-guide.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 22. Insurance Broker Company Licence Guide - 15 Jan 2026 -->
+                <article class="article-card fade-up" data-category="ia">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-ia">
+                            <span data-lang="en">IA Licensing</span>
+                            <span data-lang="tc" style="display:none;">保監局牌照</span>
+                            <span data-lang="sc" style="display:none;">保监局牌照</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="ia-insurance-broker-licence.html">
+                                <span data-lang="en">Insurance Broker Company Licence Guide</span>
+                                <span data-lang="tc" style="display:none;">保險經紀公司牌照指南</span>
+                                <span data-lang="sc" style="display:none;">保险经纪公司牌照指南</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Step-by-step guide to obtaining an insurance broker company licence from the IA. Capital requirements, PI insurance, key person requirements, and the full application process.</span>
+                            <span data-lang="tc" style="display:none;">從保監局取得保險經紀公司牌照的分步指南。資本要求、專業責任保險、關鍵人員要求及完整申請流程。</span>
+                            <span data-lang="sc" style="display:none;">从保监局取得保险经纪公司牌照的分步指南。资本要求、专业责任保险、关键人员要求及完整申请流程。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 15 Jan 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 12 min</span>
+                            </div>
+                            <a href="ia-insurance-broker-licence.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 23. Office Space Requirements - 15 Jan 2026 -->
+                <article class="article-card fade-up" data-category="setup">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-setup">
+                            <span data-lang="en">Setup</span>
+                            <span data-lang="tc" style="display:none;">設立</span>
+                            <span data-lang="sc" style="display:none;">设立</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="office-requirements-licensed-firm.html">
+                                <span data-lang="en">Office Space Requirements</span>
+                                <span data-lang="tc" style="display:none;">辦公空間要求</span>
+                                <span data-lang="sc" style="display:none;">办公空间要求</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">What SFC and IA regulators expect regarding office premises for licensed firms. Location, layout, security requirements, IT infrastructure, and the trend toward flexible office arrangements.</span>
+                            <span data-lang="tc" style="display:none;">證監會和保監局對持牌公司辦公場所的要求。地點、佈局、安全要求、IT基礎設施，以及靈活辦公安排的趨勢。</span>
+                            <span data-lang="sc" style="display:none;">证监会和保监局对持牌公司办公场所的要求。地点、布局、安全要求、IT基础设施，以及灵活办公安排的趋势。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 15 Jan 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 7 min</span>
+                            </div>
+                            <a href="office-requirements-licensed-firm.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 24. Corporate Bank Account Opening - 10 Jan 2026 -->
+                <article class="article-card fade-up" data-category="setup">
+                    <div class="article-card-body">
+                        <span class="article-card-category category-setup">
+                            <span data-lang="en">Setup</span>
+                            <span data-lang="tc" style="display:none;">設立</span>
+                            <span data-lang="sc" style="display:none;">设立</span>
+                        </span>
+                        <h3 class="article-card-title">
+                            <a href="bank-account-opening-hk.html">
+                                <span data-lang="en">Corporate Bank Account Opening</span>
+                                <span data-lang="tc" style="display:none;">公司銀行帳戶開立</span>
+                                <span data-lang="sc" style="display:none;">公司银行账户开立</span>
+                            </a>
+                        </h3>
+                        <p class="article-card-excerpt">
+                            <span data-lang="en">Practical guide to opening a corporate bank account in Hong Kong for licensed firms. Bank selection, required documents, common challenges, and tips to expedite the process.</span>
+                            <span data-lang="tc" style="display:none;">持牌公司在香港開設公司銀行帳戶的實用指南。銀行選擇、所需文件、常見挑戰及加快流程的技巧。</span>
+                            <span data-lang="sc" style="display:none;">持牌公司在香港开设公司银行账户的实用指南。银行选择、所需文件、常见挑战及加快流程的技巧。</span>
+                        </p>
+                        <div class="article-card-meta">
+                            <div class="meta-left">
+                                <span><i class="fa-regular fa-calendar"></i> 10 Jan 2026</span>
+                                <span><i class="fa-regular fa-clock"></i> 8 min</span>
+                            </div>
+                            <a href="bank-account-opening-hk.html" class="read-more">
+                                <span data-lang="en">Read More &rarr;</span>
+                                <span data-lang="tc" style="display:none;">閱讀更多 &rarr;</span>
+                                <span data-lang="sc" style="display:none;">阅读更多 &rarr;</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- No results message -->
+                <div class="no-results" id="noResults">
+                    <i class="fa-regular fa-folder-open" style="font-size:2rem; margin-bottom:0.75rem; display:block;"></i>
+                    <span data-lang="en">No articles found in this category.</span>
+                    <span data-lang="tc" style="display:none;">此分類中沒有找到文章。</span>
+                    <span data-lang="sc" style="display:none;">此分类中没有找到文章。</span>
+                </div>
+
+            </div><!-- /.blog-grid -->
+        </div>
+    </section>
+
+    <!-- ============================================================
+         WHATSAPP CTA SECTION
+         ============================================================ -->
+    <section class="blog-cta-section">
+        <div class="container">
+            <h2>
+                <span data-lang="en">Need Expert Guidance?</span>
+                <span data-lang="tc" style="display:none;">需要專業指導？</span>
+                <span data-lang="sc" style="display:none;">需要专业指导？</span>
+            </h2>
+            <p>
+                <span data-lang="en">Get personalised advice on SFC and IA licensing. Our consultants are ready to help you navigate the regulatory landscape.</span>
+                <span data-lang="tc" style="display:none;">獲取關於證監會及保監局牌照的個人化建議。我們的顧問隨時準備幫助您應對監管環境。</span>
+                <span data-lang="sc" style="display:none;">获取关于证监会及保监局牌照的个性化建议。我们的顾问随时准备帮助您应对监管环境。</span>
+            </p>
+            <a href="https://wa.me/85262528348" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-lang="en">Chat on WhatsApp</span>
+                <span data-lang="tc" style="display:none;">WhatsApp 諮詢</span>
+                <span data-lang="sc" style="display:none;">WhatsApp 咨询</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         NEWSLETTER / UPDATES SECTION
+         ============================================================ -->
+    <section class="blog-updates-section">
+        <div class="container">
+            <div class="updates-inner">
+                <h3>
+                    <span data-lang="en">Stay Updated on Hong Kong Regulatory Changes</span>
+                    <span data-lang="tc" style="display:none;">緊貼香港監管變化</span>
+                    <span data-lang="sc" style="display:none;">紧跟香港监管变化</span>
+                </h3>
+                <p>
+                    <span data-lang="en">Receive timely insights on SFC and IA regulatory developments, compliance tips, and licensing updates directly via WhatsApp.</span>
+                    <span data-lang="tc" style="display:none;">通過WhatsApp直接獲取證監會及保監局監管動態、合規提示和牌照更新的及時資訊。</span>
+                    <span data-lang="sc" style="display:none;">通过WhatsApp直接获取证监会及保监局监管动态、合规提示和牌照更新的及时资讯。</span>
+                </p>
+                <a href="https://wa.me/85262528348?text=Hi%2C%20I%27d%20like%20to%20receive%20updates%20on%20Hong%20Kong%20regulatory%20changes." class="btn-updates" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span data-lang="en">Subscribe via WhatsApp</span>
+                    <span data-lang="tc" style="display:none;">通過WhatsApp訂閱</span>
+                    <span data-lang="sc" style="display:none;">通过WhatsApp订阅</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Footer Brand -->
+                <div class="footer-brand">
+                    <h3>
+                        <span data-lang="en">David Licence Consulting</span>
+                        <span data-lang="tc" style="display:none;">大衛牌照顧問</span>
+                        <span data-lang="sc" style="display:none;">大卫牌照顾问</span>
+                    </h3>
+                    <p>
+                        <span data-lang="en">Expert SFC and IA licence consulting services in Hong Kong. Helping businesses navigate regulatory requirements with confidence.</span>
+                        <span data-lang="tc" style="display:none;">香港專業的證監會及保監局牌照顧問服務。協助企業自信地應對監管要求。</span>
+                        <span data-lang="sc" style="display:none;">香港专业的证监会及保监局牌照顾问服务。协助企业自信地应对监管要求。</span>
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>
+                        <span data-lang="en">Quick Links</span>
+                        <span data-lang="tc" style="display:none;">快速連結</span>
+                        <span data-lang="sc" style="display:none;">快速链接</span>
+                    </h4>
+                    <ul>
+                        <li><a href="../index.html#sfc">
+                            <span data-lang="en">SFC Licensing</span>
+                            <span data-lang="tc" style="display:none;">證監會牌照</span>
+                            <span data-lang="sc" style="display:none;">证监会牌照</span>
+                        </a></li>
+                        <li><a href="../index.html#ia">
+                            <span data-lang="en">IA Licensing</span>
+                            <span data-lang="tc" style="display:none;">保監局牌照</span>
+                            <span data-lang="sc" style="display:none;">保监局牌照</span>
+                        </a></li>
+                        <li><a href="../index.html#process">
+                            <span data-lang="en">Our Process</span>
+                            <span data-lang="tc" style="display:none;">服務流程</span>
+                            <span data-lang="sc" style="display:none;">服务流程</span>
+                        </a></li>
+                        <li><a href="../index.html#faq">
+                            <span data-lang="en">FAQ</span>
+                            <span data-lang="tc" style="display:none;">常見問題</span>
+                            <span data-lang="sc" style="display:none;">常见问题</span>
+                        </a></li>
+                        <li><a href="../index.html#blog">
+                            <span data-lang="en">Blog</span>
+                            <span data-lang="tc" style="display:none;">資訊</span>
+                            <span data-lang="sc" style="display:none;">资讯</span>
+                        </a></li>
+                        <li><a href="../index.html#about">
+                            <span data-lang="en">About</span>
+                            <span data-lang="tc" style="display:none;">關於我們</span>
+                            <span data-lang="sc" style="display:none;">关于我们</span>
+                        </a></li>
+                        <li><a href="../index.html#contact">
+                            <span data-lang="en">Contact</span>
+                            <span data-lang="tc" style="display:none;">聯繫我們</span>
+                            <span data-lang="sc" style="display:none;">联系我们</span>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Contact -->
+                <div class="footer-contact">
+                    <h4>
+                        <span data-lang="en">Contact Us</span>
+                        <span data-lang="tc" style="display:none;">聯繫方式</span>
+                        <span data-lang="sc" style="display:none;">联系方式</span>
+                    </h4>
+                    <a href="https://wa.me/85262528348" class="footer-whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>+852 6252 8348</span>
+                    </a>
+
+                    <!-- Footer Language Switcher -->
+                    <div class="footer-lang">
+                        <h4>
+                            <span data-lang="en">Language</span>
+                            <span data-lang="tc" style="display:none;">語言</span>
+                            <span data-lang="sc" style="display:none;">语言</span>
+                        </h4>
+                        <div class="lang-switcher footer-lang-switcher">
+                            <button class="lang-btn active" data-lang-switch="en">English</button>
+                            <button class="lang-btn" data-lang-switch="tc">繁體中文</button>
+                            <button class="lang-btn" data-lang-switch="sc">简体中文</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    <span data-lang="en">&copy; 2024&ndash;2026 David Licence Consulting. All rights reserved.</span>
+                    <span data-lang="tc" style="display:none;">&copy; 2024&ndash;2026 大衛牌照顧問。版權所有。</span>
+                    <span data-lang="sc" style="display:none;">&copy; 2024&ndash;2026 大卫牌照顾问。版权所有。</span>
+                </p>
+                <p class="footer-disclaimer">
+                    <span data-lang="en">Disclaimer: David Licence Consulting provides professional consulting services only. We are not affiliated with, endorsed by, or acting on behalf of the Securities and Futures Commission (SFC) or the Insurance Authority (IA). All regulatory decisions rest solely with the respective authorities.</span>
+                    <span data-lang="tc" style="display:none;">免責聲明：大衛牌照顧問僅提供專業顧問服務。我們並非證券及期貨事務監察委員會（證監會）或保險業監管局（保監局）的附屬機構，亦未獲其認可或代表其行事。所有監管決定均由相關監管機構全權作出。</span>
+                    <span data-lang="sc" style="display:none;">免责声明：大卫牌照顾问仅提供专业顾问服务。我们并非证券及期货事务监察委员会（证监会）或保险业监管局（保监局）的附属机构，亦未获其认可或代表其行事。所有监管决定均由相关监管机构全权作出。</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         FLOATING WHATSAPP BUTTON
+         ============================================================ -->
+    <a href="https://wa.me/85262528348" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">
+            <span data-lang="en">Chat with us</span>
+            <span data-lang="tc" style="display:none;">與我們聊天</span>
+            <span data-lang="sc" style="display:none;">与我们聊天</span>
+        </span>
+    </a>
+
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+
+    <!-- Blog Filter Enhancement (updates article count) -->
+    <script>
+    (function() {
+        'use strict';
+        var filterContainer = document.querySelector('[data-blog-filters]');
+        if (!filterContainer) return;
+
+        var cards = document.querySelectorAll('.article-card[data-category]');
+        var countEls = document.querySelectorAll('.visible-count');
+        var noResults = document.getElementById('noResults');
+
+        function updateCount() {
+            var visible = 0;
+            cards.forEach(function(card) {
+                if (card.style.display !== 'none') visible++;
+            });
+            countEls.forEach(function(el) { el.textContent = visible; });
+            if (noResults) {
+                noResults.style.display = visible === 0 ? 'block' : 'none';
+            }
+        }
+
+        filterContainer.addEventListener('click', function(e) {
+            var btn = e.target.closest('[data-filter]');
+            if (!btn) return;
+            // Small delay to let main.js filter first
+            setTimeout(updateCount, 50);
+        });
+    })();
+    </script>
+</body>
+</html>

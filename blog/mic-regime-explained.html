@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete guide to the SFC Manager-In-Charge (MIC) regime in Hong Kong. Covers the 8 Core Functions, designation requirements, board responsibilities, and implementation guide.">
+    <meta name="keywords" content="Manager-In-Charge, MIC regime, SFC Hong Kong, core functions, senior management accountability, SFC compliance, MIC designation">
+    <meta name="author" content="David Licence Consulting">
+    <meta property="og:title" content="The Manager-In-Charge (MIC) Regime Explained | David Licence Consulting">
+    <meta property="og:description" content="Understanding the SFC's Manager-In-Charge regime — the 8 Core Functions, who needs to be designated, and how to implement the regime.">
+    <meta property="og:type" content="article">
+    <title>The Manager-In-Charge (MIC) Regime Explained | David Licence Consulting</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The Manager-In-Charge (MIC) Regime Explained",
+        "author": { "@type": "Organization", "name": "David Licence Consulting" },
+        "publisher": { "@type": "Organization", "name": "David Licence Consulting" },
+        "datePublished": "2026-03-15",
+        "dateModified": "2026-03-18"
+    }
+    </script>
+    <style>
+        :root { --primary: #1a3c5e; --primary-light: #2a5f8f; --accent: #c8a961; --text: #333; --text-light: #666; --bg: #fff; --bg-light: #f8f9fa; --bg-dark: #0f2439; --border: #e0e0e0; --shadow: 0 2px 12px rgba(0,0,0,0.08); --radius: 8px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); line-height: 1.8; background: var(--bg); }
+        .blog-header { background: var(--primary); color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+        .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .header-logo { font-size: 1.4rem; font-weight: 700; color: var(--accent); text-decoration: none; }
+        .header-logo span { color: #fff; font-weight: 400; }
+        .header-nav { display: flex; align-items: center; gap: 1.5rem; }
+        .header-nav a { color: #ccc; text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+        .header-nav a:hover { color: var(--accent); }
+        .lang-switcher { display: flex; gap: 0.5rem; background: rgba(255,255,255,0.1); border-radius: 20px; padding: 0.25rem; }
+        .lang-switcher button { background: none; border: none; color: #ccc; padding: 0.3rem 0.75rem; border-radius: 16px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }
+        .lang-switcher button.active, .lang-switcher button:hover { background: var(--accent); color: var(--primary); font-weight: 600; }
+        .article-wrapper { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+        .article-meta { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid var(--accent); }
+        .article-meta .breadcrumb { font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem; }
+        .article-meta .breadcrumb a { color: var(--primary-light); text-decoration: none; }
+        .article-meta h1 { font-size: 2.2rem; color: var(--primary); line-height: 1.3; margin-bottom: 1rem; }
+        .article-meta .meta-info { display: flex; gap: 1.5rem; color: var(--text-light); font-size: 0.9rem; flex-wrap: wrap; }
+        .article-content { font-size: 1.05rem; }
+        .article-content h2 { font-size: 1.6rem; color: var(--primary); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        .article-content h3 { font-size: 1.25rem; color: var(--primary-light); margin: 2rem 0 0.75rem; }
+        .article-content p { margin-bottom: 1.2rem; text-align: justify; }
+        .article-content ul, .article-content ol { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-content li { margin-bottom: 0.5rem; }
+        .article-content strong { color: var(--primary); }
+        .article-content blockquote { border-left: 4px solid var(--accent); padding: 1rem 1.5rem; background: var(--bg-light); margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0; font-style: italic; }
+        .article-content .info-box { background: #e8f4fd; border: 1px solid #b8daef; border-radius: var(--radius); padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+        .article-content .info-box.warning { background: #fff8e6; border-color: #f0d58c; }
+        .article-content .info-box h4 { color: var(--primary); margin-bottom: 0.5rem; }
+        .article-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+        .article-content table th, .article-content table td { border: 1px solid var(--border); padding: 0.75rem 1rem; text-align: left; }
+        .article-content table th { background: var(--primary); color: #fff; font-weight: 600; }
+        .article-content table tr:nth-child(even) { background: var(--bg-light); }
+        .core-function { background: var(--bg-light); border-left: 4px solid var(--accent); padding: 1.25rem 1.5rem; margin: 1.5rem 0; border-radius: 0 var(--radius) var(--radius) 0; }
+        .core-function h4 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .core-function .cf-number { color: var(--accent); font-weight: 700; font-size: 0.9rem; display: block; margin-bottom: 0.25rem; }
+        .cta-section { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: #fff; padding: 2.5rem; border-radius: var(--radius); margin: 3rem 0; text-align: center; }
+        .cta-section h2 { color: var(--accent); margin-bottom: 1rem; border: none; padding: 0; font-size: 1.5rem; }
+        .cta-section p { color: #ddd; margin-bottom: 1.5rem; font-size: 1.05rem; }
+        .cta-button { display: inline-block; background: #25D366; color: #fff; padding: 0.9rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
+        .related-articles { margin: 3rem 0; }
+        .related-articles h2 { font-size: 1.5rem; color: var(--primary); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .related-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .related-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+        .related-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .related-card h3 a { color: var(--primary); text-decoration: none; }
+        .related-card h3 a:hover { color: var(--accent); }
+        .related-card p { font-size: 0.85rem; color: var(--text-light); }
+        .blog-footer { background: var(--bg-dark); color: #aaa; padding: 2rem; text-align: center; font-size: 0.9rem; }
+        .blog-footer a { color: var(--accent); text-decoration: none; }
+        .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(37,211,102,0.4); z-index: 999; transition: transform 0.3s; text-decoration: none; }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-float svg { width: 32px; height: 32px; fill: #fff; }
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+        @media (max-width: 768px) { .article-meta h1 { font-size: 1.6rem; } .article-wrapper { padding: 1.5rem 1rem 3rem; } .header-inner { flex-direction: column; text-align: center; } }
+    </style>
+</head>
+<body>
+
+<header class="blog-header">
+    <div class="header-inner">
+        <a href="../index.html" class="header-logo">David Licence <span>Consulting</span></a>
+        <nav class="header-nav">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#services">Services</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#contact">Contact</a>
+            <div class="lang-switcher">
+                <button class="active" onclick="switchLang('en')">EN</button>
+                <button onclick="switchLang('zh-hant')">繁</button>
+                <button onclick="switchLang('zh-hans')">简</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- English Content -->
+<div id="content-en" class="lang-content active">
+<article class="article-wrapper">
+    <div class="article-meta">
+        <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#blog">Blog</a> / MIC Regime Explained</div>
+        <h1>The Manager-In-Charge (MIC) Regime Explained</h1>
+        <div class="meta-info">
+            <span>Published: March 15, 2026</span>
+            <span>Reading Time: 13 min</span>
+            <span>Category: Compliance</span>
+        </div>
+    </div>
+    <div class="article-content">
+
+        <p>The Manager-In-Charge (MIC) regime is one of the SFC's most significant regulatory frameworks for enhancing senior management accountability in licensed corporations. Introduced through the SFC's Circular on Measures for Augmenting the Accountability of Senior Management, the regime requires licensed corporations to identify and designate individuals who are primarily responsible for managing each of the firm's core functions. This guide provides a thorough explanation of the MIC regime, the 8 Core Functions, designation requirements, and practical implementation guidance.</p>
+
+        <h2>1. Background and Purpose of the MIC Regime</h2>
+
+        <p>The MIC regime was introduced by the SFC to address a perceived gap in senior management accountability. Prior to the MIC regime, the SFC observed instances where firms had unclear lines of responsibility, making it difficult to identify who was accountable for specific business functions and, more importantly, for failures in those functions.</p>
+
+        <h3>Key Objectives</h3>
+        <ul>
+            <li><strong>Clarity of accountability:</strong> Ensure that every critical function within a licensed corporation has a clearly identified individual who bears responsibility</li>
+            <li><strong>Enhanced governance:</strong> Strengthen the governance framework of licensed corporations by requiring formal designation of senior managers</li>
+            <li><strong>Regulatory efficiency:</strong> Enable the SFC to more effectively identify and engage with the individuals responsible for specific functions when issues arise</li>
+            <li><strong>Culture of accountability:</strong> Foster a culture where senior management takes personal ownership of compliance and risk management</li>
+        </ul>
+
+        <p>The regime applies to all SFC licensed corporations, regardless of their size. However, the SFC recognises that smaller firms may have the same individual fulfilling multiple MIC roles, which is permissible as long as the individual has the capacity and competence to perform all designated functions effectively.</p>
+
+        <h2>2. The 8 Core Functions</h2>
+
+        <p>The MIC regime identifies 8 Core Functions that represent the essential activities of a licensed corporation. For each applicable core function, the firm must designate at least one Manager-In-Charge.</p>
+
+        <div class="core-function">
+            <span class="cf-number">Core Function 1</span>
+            <h4>Overall Management Oversight</h4>
+            <p>This function covers the overall strategic direction and management of the licensed corporation's business. The MIC for this function is typically the CEO, Managing Director, or the most senior executive responsible for the firm's overall operations. This individual is expected to have a comprehensive understanding of the firm's business, risks, and regulatory obligations.</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">Core Function 2</span>
+            <h4>Key Business Line</h4>
+            <p>This function covers the management of each key business line that constitutes a regulated activity. For example, if a firm is licensed for both Type 1 (dealing) and Type 9 (asset management), it should designate a separate MIC for each business line (though the same individual can serve both roles if appropriate). The MIC for this function is typically the head of each business unit or trading desk.</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">Core Function 3</span>
+            <h4>Operational Control and Review</h4>
+            <p>This function covers the operational infrastructure of the firm, including trade processing, settlement, account management, and record-keeping. The MIC is typically the COO or Head of Operations, responsible for ensuring that the firm's operational processes are efficient, accurate, and compliant with regulatory requirements.</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">Core Function 4</span>
+            <h4>Risk Management</h4>
+            <p>This function covers the identification, measurement, monitoring, and management of risks across the firm. The MIC is typically the Chief Risk Officer or Head of Risk Management. The SFC expects this function to be independent from the business lines it monitors, to the extent that the firm's size permits.</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">Core Function 5</span>
+            <h4>Finance and Accounting</h4>
+            <p>This function covers financial management, accounting, regulatory capital management, and financial reporting (including FRR compliance). The MIC is typically the CFO or Finance Director, responsible for ensuring accurate financial records, timely regulatory reporting, and maintenance of adequate financial resources.</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">Core Function 6</span>
+            <h4>Information Technology</h4>
+            <p>This function covers the firm's technology infrastructure, cybersecurity, data management, and technology governance. The MIC is typically the CTO, Head of IT, or an equivalent technology leader. Given the increasing importance of cybersecurity, the SFC places significant emphasis on this function.</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">Core Function 7</span>
+            <h4>Compliance</h4>
+            <p>This function covers the compliance framework, regulatory advisory, compliance monitoring, and regulatory reporting. The MIC is typically the Chief Compliance Officer or Head of Compliance. The SFC expects this function to have appropriate independence and authority within the organisation.</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">Core Function 8</span>
+            <h4>Anti-Money Laundering and Counter-Terrorist Financing (AML/CTF)</h4>
+            <p>This function specifically covers AML/CTF compliance, including client due diligence, transaction monitoring, suspicious transaction reporting, and sanctions screening. The MIC is typically the Money Laundering Reporting Officer (MLRO) or AML compliance officer. Given the global emphasis on AML compliance, this function receives particular scrutiny from the SFC.</p>
+        </div>
+
+        <div class="info-box">
+            <h4>Not All Functions Apply to Every Firm</h4>
+            <p>Smaller firms may not have all 8 core functions as separate activities. For example, a small Type 9 licensed corporation with 3 staff may have one person serving as MIC for multiple core functions. The key requirement is that all applicable functions are covered, and the designated MICs have the competence and capacity to fulfil their responsibilities.</p>
+        </div>
+
+        <h2>3. Who Needs to Be Designated as MIC?</h2>
+
+        <p>The MIC regime applies to individuals who have primary responsibility for managing a core function. The SFC expects MICs to be:</p>
+
+        <ul>
+            <li><strong>Licensed individuals:</strong> MICs must generally be Licensed Representatives or Responsible Officers of the licensed corporation</li>
+            <li><strong>Sufficiently senior:</strong> They must have the authority and position to effectively manage the designated core function</li>
+            <li><strong>Competent:</strong> They must have the knowledge, skills, and experience relevant to the core function they manage</li>
+            <li><strong>Accountable:</strong> They must accept personal accountability for the performance of the core function</li>
+        </ul>
+
+        <h3>Overlap with RO Roles</h3>
+        <p>In many firms, particularly smaller ones, the MIC designations overlap significantly with the RO roles. An RO for Type 1 activities might also be the MIC for Core Function 2 (Key Business Line) for the dealing business. This is perfectly acceptable, and in fact common. The MIC regime complements rather than replaces the RO framework.</p>
+
+        <h2>4. Board Responsibilities</h2>
+
+        <p>The board of directors of a licensed corporation has overarching responsibility for the MIC regime. Specifically, the board is expected to:</p>
+
+        <ul>
+            <li><strong>Approve MIC designations:</strong> Formally approve the designation of each MIC through a board resolution</li>
+            <li><strong>Ensure adequate resources:</strong> Ensure that each MIC has the resources, authority, and support needed to fulfil their role</li>
+            <li><strong>Monitor effectiveness:</strong> Periodically review whether MIC designations remain appropriate and whether MICs are fulfilling their responsibilities effectively</li>
+            <li><strong>Succession planning:</strong> Ensure that there are succession plans in place for key MIC positions</li>
+            <li><strong>Address gaps:</strong> Promptly address any gaps in MIC designations when individuals leave or change roles</li>
+        </ul>
+
+        <h2>5. Regulatory Expectations</h2>
+
+        <p>The SFC has specific expectations regarding how the MIC regime should operate in practice:</p>
+
+        <h3>Documentation</h3>
+        <ul>
+            <li>Formal designation letters or terms of reference for each MIC</li>
+            <li>Clear description of the scope and boundaries of each MIC's responsibilities</li>
+            <li>Board resolutions approving MIC designations</li>
+            <li>Updated organisational chart showing MIC assignments</li>
+        </ul>
+
+        <h3>Notification to the SFC</h3>
+        <ul>
+            <li>Licensed corporations must notify the SFC of their MIC designations</li>
+            <li>Changes in MIC designations must be promptly reported to the SFC</li>
+            <li>Notifications are typically made through the WINGS portal or by written correspondence</li>
+        </ul>
+
+        <h3>Ongoing Review</h3>
+        <ul>
+            <li>The board should review MIC designations at least annually</li>
+            <li>Reviews should assess whether the designated individuals remain suitable and whether the regime is operating effectively</li>
+            <li>Any changes in business activities that affect the relevance of core functions should trigger a review</li>
+        </ul>
+
+        <div class="info-box warning">
+            <h4>SFC Enforcement</h4>
+            <p>The SFC has indicated that it will consider the conduct and accountability of MICs when taking enforcement action. If a regulatory breach occurs in a particular area, the SFC will look to the designated MIC for that core function as a key person of interest. This underscores the importance of taking MIC designations seriously and ensuring that designated individuals are genuinely engaged in managing their respective functions.</p>
+        </div>
+
+        <h2>6. Implementation Guide</h2>
+
+        <p>For firms that are newly licensed or have not yet fully implemented the MIC regime, here is a step-by-step implementation guide:</p>
+
+        <h3>Step 1: Map Your Core Functions</h3>
+        <p>Review the 8 Core Functions and determine which ones apply to your firm. For most licensed corporations, at least Core Functions 1, 2, 5, 7, and 8 will apply. Larger or more complex firms will likely have all 8 functions applicable.</p>
+
+        <h3>Step 2: Identify Appropriate MICs</h3>
+        <p>For each applicable core function, identify the individual who is best positioned to serve as MIC. Consider their:</p>
+        <ul>
+            <li>Current responsibilities and whether they already manage the function in practice</li>
+            <li>Licensing status (they generally need to be licensed)</li>
+            <li>Competence and experience relevant to the function</li>
+            <li>Capacity to take on the responsibility alongside their other duties</li>
+        </ul>
+
+        <h3>Step 3: Formalise Designations</h3>
+        <ul>
+            <li>Prepare designation letters or terms of reference for each MIC</li>
+            <li>Obtain board approval for all MIC designations</li>
+            <li>Brief each MIC on their responsibilities and the SFC's expectations</li>
+            <li>Update the organisational chart</li>
+        </ul>
+
+        <h3>Step 4: Notify the SFC</h3>
+        <ul>
+            <li>Submit MIC notifications through the WINGS portal</li>
+            <li>Ensure all details are accurate and consistent with internal records</li>
+        </ul>
+
+        <h3>Step 5: Establish Ongoing Governance</h3>
+        <ul>
+            <li>Incorporate MIC reviews into the board's annual agenda</li>
+            <li>Establish a process for promptly updating designations when personnel changes occur</li>
+            <li>Ensure MICs report regularly to the board on the status of their core function</li>
+        </ul>
+
+        <h2>7. Common Questions</h2>
+
+        <h3>Can one person be MIC for multiple core functions?</h3>
+        <p>Yes, particularly in smaller firms. The SFC acknowledges that in smaller licensed corporations, a single individual may serve as MIC for multiple core functions. The key consideration is whether the individual has the capacity and competence to effectively manage all designated functions. In very small firms with 2-3 staff, it is common for 1-2 individuals to cover all applicable MIC roles.</p>
+
+        <h3>Does the MIC need to be a Responsible Officer?</h3>
+        <p>Not necessarily, but in practice, MICs for core business functions (Core Functions 1 and 2) are typically also ROs. For support functions like IT or finance, the MIC may be a Licensed Representative or even an unlicensed senior manager, though the SFC generally prefers licensed individuals.</p>
+
+        <h3>What happens if a MIC leaves the firm?</h3>
+        <p>The firm must promptly designate a replacement MIC and notify the SFC. There should not be a prolonged period where a core function has no designated MIC. This is why succession planning is an important element of the MIC regime.</p>
+
+        <h3>How does the MIC regime affect day-to-day operations?</h3>
+        <p>For well-managed firms, the MIC regime should formalise and document what is already happening in practice. It is about clarity and accountability rather than creating new operational requirements. The practical impact is primarily in documentation, notification to the SFC, and the heightened personal accountability of designated individuals.</p>
+
+        <h3>Is the MIC regime the same as the Senior Managers Regime in the UK?</h3>
+        <p>There are similarities in concept — both aim to enhance individual accountability at the senior management level. However, the Hong Kong MIC regime is less prescriptive than the UK's Senior Managers and Certification Regime (SM&CR) and does not include features like the UK's reverse burden of proof. The MIC regime focuses on identification and designation rather than creating new statutory obligations.</p>
+
+        <h3>Can MIC functions be outsourced?</h3>
+        <p>While certain operational activities can be outsourced, the MIC responsibility itself cannot be outsourced. The designated MIC must be an individual within the firm (or closely connected to it) who takes personal accountability for the function. If a support function like IT is outsourced, the MIC for Core Function 6 would be the internal individual who manages and oversees the outsourcing arrangement.</p>
+
+        <blockquote>
+            <p>"The MIC regime is fundamentally about ensuring that every critical function in a licensed corporation has a name attached to it — someone who is accountable, competent, and engaged. For firms that already have strong governance, it is largely a formalisation exercise. For those that do not, it is a catalyst for improving management structures."</p>
+        </blockquote>
+
+    </div>
+</article>
+
+<div class="article-wrapper">
+    <div class="cta-section">
+        <h2>Need Help Implementing the MIC Regime?</h2>
+        <p>Our compliance team can help you assess your core functions, designate appropriate MICs, prepare all documentation, and ensure ongoing compliance with the regime.</p>
+        <a href="https://wa.me/85291234567" class="cta-button" target="_blank" rel="noopener">Chat With Us on WhatsApp</a>
+    </div>
+    <div class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+            <div class="related-card">
+                <h3><a href="responsible-officer-requirements.html">SFC Responsible Officer (RO) Requirements</a></h3>
+                <p>Detailed guide on RO qualifications and the application process.</p>
+            </div>
+            <div class="related-card">
+                <h3><a href="sfc-type-1-licence-guide.html">The Complete Guide to SFC Type 1 Licence</a></h3>
+                <p>Comprehensive guide to obtaining a Type 1 licence.</p>
+            </div>
+            <div class="related-card">
+                <h3><a href="liquid-capital-requirements.html">Understanding Liquid Capital Requirements</a></h3>
+                <p>Essential guide to FRR liquid capital requirements.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Traditional Chinese Content -->
+<div id="content-zh-hant" class="lang-content">
+<article class="article-wrapper">
+    <div class="article-meta">
+        <div class="breadcrumb"><a href="../index.html">主頁</a> / <a href="../index.html#blog">文章</a> / MIC制度詳解</div>
+        <h1>核心職能主管（MIC）制度詳解</h1>
+        <div class="meta-info">
+            <span>發佈日期：2026年3月15日</span>
+            <span>閱讀時間：13 分鐘</span>
+            <span>類別：合規</span>
+        </div>
+    </div>
+    <div class="article-content">
+
+        <p>核心職能主管（MIC）制度是證監會最重要的監管框架之一，旨在加強持牌法團高級管理層的問責。該制度通過證監會關於加強高級管理層問責措施的通函引入，要求持牌法團識別並指定主要負責管理公司每項核心職能的個人。本指南全面解釋MIC制度、八項核心職能、指定要求及實施指引。</p>
+
+        <h2>1. MIC制度的背景和目的</h2>
+
+        <p>證監會引入MIC制度是為了解決高級管理層問責方面的不足。在MIC制度之前，證監會觀察到一些公司的責任界線不清晰，難以確定誰對特定業務職能負責，更重要的是，誰對這些職能的失敗負責。</p>
+
+        <h3>主要目標</h3>
+        <ul>
+            <li><strong>問責清晰：</strong>確保持牌法團內的每項關鍵職能都有一位明確識別的、承擔責任的個人</li>
+            <li><strong>加強管治：</strong>通過要求正式指定高級管理人員來加強持牌法團的管治框架</li>
+            <li><strong>監管效率：</strong>使證監會能更有效地識別和接觸負責特定職能的個人</li>
+            <li><strong>問責文化：</strong>培養高級管理層對合規和風險管理承擔個人責任的文化</li>
+        </ul>
+
+        <p>該制度適用於所有證監會持牌法團，不論其規模。然而，證監會認可較小的公司可能由同一個人擔任多個MIC角色，只要該個人有能力和勝任力有效執行所有指定職能即可。</p>
+
+        <h2>2. 八項核心職能</h2>
+
+        <p>MIC制度識別了八項核心職能，代表持牌法團的基本活動。對於每項適用的核心職能，公司必須指定至少一名核心職能主管。</p>
+
+        <div class="core-function">
+            <span class="cf-number">核心職能 1</span>
+            <h4>整體管理監督</h4>
+            <p>此職能涵蓋持牌法團業務的整體戰略方向和管理。此職能的MIC通常是首席執行官、董事總經理或負責公司整體營運的最高級行政人員。預期此人對公司的業務、風險和監管義務有全面的了解。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心職能 2</span>
+            <h4>主要業務線</h4>
+            <p>此職能涵蓋構成受規管活動的每條主要業務線的管理。例如，如果公司同時持有第1類（交易）和第9類（資產管理）牌照，應為每條業務線指定單獨的MIC（如適當，同一人可同時擔任兩個角色）。此職能的MIC通常是每個業務單位或交易台的主管。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心職能 3</span>
+            <h4>營運控制及審查</h4>
+            <p>此職能涵蓋公司的營運基礎設施，包括交易處理、結算、帳戶管理和記錄保存。MIC通常是首席營運官或營運主管，負責確保公司的營運流程高效、準確並符合監管要求。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心職能 4</span>
+            <h4>風險管理</h4>
+            <p>此職能涵蓋公司全範圍的風險識別、衡量、監控和管理。MIC通常是首席風險官或風險管理主管。證監會期望此職能獨立於其監控的業務線，在公司規模允許的範圍內。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心職能 5</span>
+            <h4>財務及會計</h4>
+            <p>此職能涵蓋財務管理、會計、監管資本管理和財務報告（包括FRR合規）。MIC通常是首席財務官或財務總監，負責確保準確的財務記錄、及時的監管報告和維持充足的財務資源。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心職能 6</span>
+            <h4>資訊科技</h4>
+            <p>此職能涵蓋公司的技術基礎設施、網絡安全、數據管理和技術管治。MIC通常是首席技術官、IT主管或同等的技術領導者。鑒於網絡安全日益重要，證監會非常重視此職能。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心職能 7</span>
+            <h4>合規</h4>
+            <p>此職能涵蓋合規框架、監管諮詢、合規監控和監管報告。MIC通常是首席合規官或合規主管。證監會期望此職能在組織內具有適當的獨立性和權力。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心職能 8</span>
+            <h4>打擊洗錢及反恐融資（AML/CTF）</h4>
+            <p>此職能專門涵蓋AML/CTF合規，包括客戶盡職調查、交易監控、可疑交易報告和制裁篩查。MIC通常是洗錢報告主任（MLRO）或AML合規主任。鑒於全球對AML合規的重視，此職能受到證監會的特別審查。</p>
+        </div>
+
+        <div class="info-box">
+            <h4>並非所有職能適用於每間公司</h4>
+            <p>較小的公司可能不會將所有8項核心職能作為獨立活動。例如，擁有3名員工的小型第9類持牌法團可能由一人擔任多項核心職能的MIC。關鍵要求是所有適用的職能都有人負責，且指定的MIC有勝任力和能力履行其責任。</p>
+        </div>
+
+        <h2>3. 誰需要被指定為MIC？</h2>
+
+        <p>MIC制度適用於主要負責管理核心職能的個人。證監會期望MIC是：</p>
+
+        <ul>
+            <li><strong>持牌個人：</strong>MIC通常必須是持牌法團的持牌代表或負責人員</li>
+            <li><strong>足夠高級：</strong>必須有權力和職位有效管理指定的核心職能</li>
+            <li><strong>勝任：</strong>必須具備與其管理的核心職能相關的知識、技能和經驗</li>
+            <li><strong>可問責：</strong>必須接受對核心職能表現的個人問責</li>
+        </ul>
+
+        <h2>4. 董事會責任</h2>
+
+        <p>持牌法團的董事會對MIC制度承擔總體責任。具體而言，董事會應：</p>
+
+        <ul>
+            <li><strong>批准MIC指定：</strong>通過董事會決議正式批准每位MIC的指定</li>
+            <li><strong>確保充足資源：</strong>確保每位MIC有履行角色所需的資源、權力和支持</li>
+            <li><strong>監督有效性：</strong>定期審查MIC指定是否仍然適當，以及MIC是否有效履行職責</li>
+            <li><strong>繼任規劃：</strong>確保為關鍵MIC職位制定繼任計劃</li>
+            <li><strong>處理空缺：</strong>在個人離職或更換角色時及時處理MIC指定的空缺</li>
+        </ul>
+
+        <h2>5. 監管期望</h2>
+
+        <h3>文件記錄</h3>
+        <ul>
+            <li>每位MIC的正式指定函或職權範圍</li>
+            <li>每位MIC的責任範圍和界限的清楚描述</li>
+            <li>批准MIC指定的董事會決議</li>
+            <li>顯示MIC分配的更新組織架構圖</li>
+        </ul>
+
+        <h3>通知證監會</h3>
+        <ul>
+            <li>持牌法團必須將其MIC指定通知證監會</li>
+            <li>MIC指定的變更必須及時向證監會報告</li>
+            <li>通知通常通過WINGS平台或書面信函進行</li>
+        </ul>
+
+        <div class="info-box warning">
+            <h4>證監會執法</h4>
+            <p>證監會表示在採取執法行動時會考慮MIC的行為和問責。如果在特定領域發生監管違規，證監會將把該核心職能的指定MIC視為關鍵相關人員。這強調了認真對待MIC指定的重要性。</p>
+        </div>
+
+        <h2>6. 實施指引</h2>
+
+        <h3>步驟一：規劃您的核心職能</h3>
+        <p>審查八項核心職能，確定哪些適用於您的公司。對於大多數持牌法團，至少核心職能1、2、5、7和8將適用。</p>
+
+        <h3>步驟二：識別適當的MIC</h3>
+        <p>對於每項適用的核心職能，識別最適合擔任MIC的個人。考慮其當前責任、持牌狀態、勝任力和能力。</p>
+
+        <h3>步驟三：正式化指定</h3>
+        <ul>
+            <li>為每位MIC準備指定函或職權範圍</li>
+            <li>取得董事會對所有MIC指定的批准</li>
+            <li>向每位MIC簡介其責任和證監會的期望</li>
+            <li>更新組織架構圖</li>
+        </ul>
+
+        <h3>步驟四：通知證監會</h3>
+        <p>通過WINGS平台提交MIC通知。確保所有詳情準確且與內部記錄一致。</p>
+
+        <h3>步驟五：建立持續管治</h3>
+        <ul>
+            <li>將MIC審查納入董事會的年度議程</li>
+            <li>建立在人員變動時及時更新指定的流程</li>
+            <li>確保MIC定期向董事會報告其核心職能的狀況</li>
+        </ul>
+
+        <h2>7. 常見問題</h2>
+
+        <h3>一個人可以擔任多項核心職能的MIC嗎？</h3>
+        <p>可以，特別是在較小的公司中。證監會承認在較小的持牌法團中，一個人可以擔任多項核心職能的MIC。關鍵考慮因素是該人是否有能力和勝任力有效管理所有指定職能。</p>
+
+        <h3>MIC需要是負責人員嗎？</h3>
+        <p>不一定，但在實踐中，核心業務職能（核心職能1和2）的MIC通常也是RO。對於IT或財務等支持職能，MIC可以是持牌代表甚至未持牌的高級管理人員。</p>
+
+        <h3>如果MIC離開公司怎麼辦？</h3>
+        <p>公司必須及時指定替代MIC並通知證監會。不應有長期沒有指定MIC的核心職能。這就是繼任規劃是MIC制度重要元素的原因。</p>
+
+        <h3>MIC職能可以外判嗎？</h3>
+        <p>雖然某些營運活動可以外判，但MIC責任本身不能外判。指定的MIC必須是公司內部的個人，對該職能承擔個人問責。如果IT等支持職能被外判，核心職能6的MIC將是管理和監督外判安排的內部個人。</p>
+
+        <blockquote>
+            <p>「MIC制度的根本目的是確保持牌法團的每項關鍵職能都有一個名字與之相關——一個可問責、勝任和投入的人。對於已經有強大管治的公司來說，這在很大程度上是一個正式化的工作。對於那些沒有的公司來說，它是改善管理結構的催化劑。」</p>
+        </blockquote>
+
+    </div>
+</article>
+
+<div class="article-wrapper">
+    <div class="cta-section">
+        <h2>需要協助實施MIC制度？</h2>
+        <p>我們的合規團隊可以幫助您評估核心職能、指定適當的MIC、準備所有文件，並確保持續遵守制度。</p>
+        <a href="https://wa.me/85291234567" class="cta-button" target="_blank" rel="noopener">透過 WhatsApp 聯繫我們</a>
+    </div>
+    <div class="related-articles">
+        <h2>相關文章</h2>
+        <div class="related-grid">
+            <div class="related-card">
+                <h3><a href="responsible-officer-requirements.html">證監會負責人員（RO）要求</a></h3>
+                <p>RO資格和申請流程的詳細指南。</p>
+            </div>
+            <div class="related-card">
+                <h3><a href="sfc-type-1-licence-guide.html">香港證監會第1類牌照完整指南</a></h3>
+                <p>取得第1類牌照的全面指南。</p>
+            </div>
+            <div class="related-card">
+                <h3><a href="liquid-capital-requirements.html">了解速動資金要求</a></h3>
+                <p>FRR速動資金要求的必備指南。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Simplified Chinese Content -->
+<div id="content-zh-hans" class="lang-content">
+<article class="article-wrapper">
+    <div class="article-meta">
+        <div class="breadcrumb"><a href="../index.html">主页</a> / <a href="../index.html#blog">文章</a> / MIC制度详解</div>
+        <h1>核心职能主管（MIC）制度详解</h1>
+        <div class="meta-info">
+            <span>发布日期：2026年3月15日</span>
+            <span>阅读时间：13 分钟</span>
+            <span>类别：合规</span>
+        </div>
+    </div>
+    <div class="article-content">
+
+        <p>核心职能主管（MIC）制度是证监会最重要的监管框架之一，旨在加强持牌法团高级管理层的问责。该制度通过证监会关于加强高级管理层问责措施的通函引入，要求持牌法团识别并指定主要负责管理公司每项核心职能的个人。本指南全面解释MIC制度、八项核心职能、指定要求及实施指引。</p>
+
+        <h2>1. MIC制度的背景和目的</h2>
+
+        <p>证监会引入MIC制度是为了解决高级管理层问责方面的不足。在MIC制度之前，证监会观察到一些公司的责任界线不清晰，难以确定谁对特定业务职能负责。</p>
+
+        <h3>主要目标</h3>
+        <ul>
+            <li><strong>问责清晰：</strong>确保持牌法团内的每项关键职能都有一位明确识别的、承担责任的个人</li>
+            <li><strong>加强管治：</strong>通过要求正式指定高级管理人员来加强持牌法团的管治框架</li>
+            <li><strong>监管效率：</strong>使证监会能更有效地识别和接触负责特定职能的个人</li>
+            <li><strong>问责文化：</strong>培养高级管理层对合规和风险管理承担个人责任的文化</li>
+        </ul>
+
+        <h2>2. 八项核心职能</h2>
+
+        <div class="core-function">
+            <span class="cf-number">核心职能 1</span>
+            <h4>整体管理监督</h4>
+            <p>此职能涵盖持牌法团业务的整体战略方向和管理。MIC通常是首席执行官、董事总经理或负责公司整体运营的最高级行政人员。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心职能 2</span>
+            <h4>主要业务线</h4>
+            <p>此职能涵盖构成受规管活动的每条主要业务线的管理。如果公司同时持有多类牌照，应为每条业务线指定MIC。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心职能 3</span>
+            <h4>运营控制及审查</h4>
+            <p>此职能涵盖公司的运营基础设施，包括交易处理、结算、账户管理和记录保存。MIC通常是首席运营官或运营主管。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心职能 4</span>
+            <h4>风险管理</h4>
+            <p>此职能涵盖公司全范围的风险识别、衡量、监控和管理。MIC通常是首席风险官或风险管理主管。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心职能 5</span>
+            <h4>财务及会计</h4>
+            <p>此职能涵盖财务管理、会计、监管资本管理和财务报告（包括FRR合规）。MIC通常是首席财务官或财务总监。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心职能 6</span>
+            <h4>信息技术</h4>
+            <p>此职能涵盖公司的技术基础设施、网络安全、数据管理和技术管治。MIC通常是首席技术官或IT主管。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心职能 7</span>
+            <h4>合规</h4>
+            <p>此职能涵盖合规框架、监管咨询、合规监控和监管报告。MIC通常是首席合规官或合规主管。</p>
+        </div>
+
+        <div class="core-function">
+            <span class="cf-number">核心职能 8</span>
+            <h4>打击洗钱及反恐融资（AML/CTF）</h4>
+            <p>此职能专门涵盖AML/CTF合规，包括客户尽职调查、交易监控、可疑交易报告和制裁筛查。MIC通常是洗钱报告主任（MLRO）或AML合规主任。</p>
+        </div>
+
+        <div class="info-box">
+            <h4>并非所有职能适用于每间公司</h4>
+            <p>较小的公司可能不会将所有8项核心职能作为独立活动。关键要求是所有适用的职能都有人负责，且指定的MIC有胜任力和能力履行其责任。</p>
+        </div>
+
+        <h2>3. 谁需要被指定为MIC？</h2>
+
+        <ul>
+            <li><strong>持牌个人：</strong>MIC通常必须是持牌法团的持牌代表或负责人员</li>
+            <li><strong>足够高级：</strong>必须有权力和职位有效管理指定的核心职能</li>
+            <li><strong>胜任：</strong>必须具备与其管理的核心职能相关的知识、技能和经验</li>
+            <li><strong>可问责：</strong>必须接受对核心职能表现的个人问责</li>
+        </ul>
+
+        <h2>4. 董事会责任</h2>
+
+        <ul>
+            <li><strong>批准MIC指定：</strong>通过董事会决议正式批准每位MIC的指定</li>
+            <li><strong>确保充足资源：</strong>确保每位MIC有履行角色所需的资源、权力和支持</li>
+            <li><strong>监督有效性：</strong>定期审查MIC指定是否仍然适当</li>
+            <li><strong>继任规划：</strong>确保为关键MIC职位制定继任计划</li>
+            <li><strong>处理空缺：</strong>在人员变动时及时处理MIC指定的空缺</li>
+        </ul>
+
+        <h2>5. 监管期望</h2>
+
+        <h3>文件记录</h3>
+        <ul>
+            <li>每位MIC的正式指定函或职权范围</li>
+            <li>每位MIC的责任范围和界限的清楚描述</li>
+            <li>批准MIC指定的董事会决议</li>
+            <li>显示MIC分配的更新组织架构图</li>
+        </ul>
+
+        <h3>通知证监会</h3>
+        <ul>
+            <li>持牌法团必须将其MIC指定通知证监会</li>
+            <li>MIC指定的变更必须及时向证监会报告</li>
+        </ul>
+
+        <div class="info-box warning">
+            <h4>证监会执法</h4>
+            <p>证监会表示在采取执法行动时会考虑MIC的行为和问责。如果在特定领域发生监管违规，证监会将把该核心职能的指定MIC视为关键相关人员。</p>
+        </div>
+
+        <h2>6. 实施指引</h2>
+
+        <h3>步骤一：规划您的核心职能</h3>
+        <p>审查八项核心职能，确定哪些适用于您的公司。</p>
+
+        <h3>步骤二：识别适当的MIC</h3>
+        <p>对于每项适用的核心职能，识别最适合担任MIC的个人。考虑其当前责任、持牌状态、胜任力和能力。</p>
+
+        <h3>步骤三：正式化指定</h3>
+        <ul>
+            <li>为每位MIC准备指定函或职权范围</li>
+            <li>取得董事会对所有MIC指定的批准</li>
+            <li>向每位MIC简介其责任和证监会的期望</li>
+            <li>更新组织架构图</li>
+        </ul>
+
+        <h3>步骤四：通知证监会</h3>
+        <p>通过WINGS平台提交MIC通知。</p>
+
+        <h3>步骤五：建立持续管治</h3>
+        <ul>
+            <li>将MIC审查纳入董事会的年度议程</li>
+            <li>建立在人员变动时及时更新指定的流程</li>
+            <li>确保MIC定期向董事会报告其核心职能的状况</li>
+        </ul>
+
+        <h2>7. 常见问题</h2>
+
+        <h3>一个人可以担任多项核心职能的MIC吗？</h3>
+        <p>可以，特别是在较小的公司中。证监会承认在较小的持牌法团中，一个人可以担任多项核心职能的MIC。关键考虑因素是该人是否有能力和胜任力有效管理所有指定职能。</p>
+
+        <h3>MIC需要是负责人员吗？</h3>
+        <p>不一定，但在实践中，核心业务职能（核心职能1和2）的MIC通常也是RO。对于IT或财务等支持职能，MIC可以是持牌代表甚至未持牌的高级管理人员。</p>
+
+        <h3>如果MIC离开公司怎么办？</h3>
+        <p>公司必须及时指定替代MIC并通知证监会。不应有长期没有指定MIC的核心职能。</p>
+
+        <h3>MIC职能可以外包吗？</h3>
+        <p>虽然某些运营活动可以外包，但MIC责任本身不能外包。指定的MIC必须是公司内部的个人，对该职能承担个人问责。</p>
+
+        <blockquote>
+            <p>"MIC制度的根本目的是确保持牌法团的每项关键职能都有一个名字与之相关——一个可问责、胜任和投入的人。对于已经有强大管治的公司来说，这在很大程度上是一个正式化的工作。对于那些没有的公司来说，它是改善管理结构的催化剂。"</p>
+        </blockquote>
+
+    </div>
+</article>
+
+<div class="article-wrapper">
+    <div class="cta-section">
+        <h2>需要协助实施MIC制度？</h2>
+        <p>我们的合规团队可以帮助您评估核心职能、指定适当的MIC、准备所有文件，并确保持续遵守制度。</p>
+        <a href="https://wa.me/85291234567" class="cta-button" target="_blank" rel="noopener">通过 WhatsApp 联系我们</a>
+    </div>
+    <div class="related-articles">
+        <h2>相关文章</h2>
+        <div class="related-grid">
+            <div class="related-card">
+                <h3><a href="responsible-officer-requirements.html">证监会负责人员（RO）要求</a></h3>
+                <p>RO资格和申请流程的详细指南。</p>
+            </div>
+            <div class="related-card">
+                <h3><a href="sfc-type-1-licence-guide.html">香港证监会第1类牌照完整指南</a></h3>
+                <p>取得第1类牌照的全面指南。</p>
+            </div>
+            <div class="related-card">
+                <h3><a href="liquid-capital-requirements.html">了解速动资金要求</a></h3>
+                <p>FRR速动资金要求的必备指南。</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<a href="https://wa.me/85291234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958C9.726 30.988 12.742 32 16.004 32 24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.35 22.614c-.396 1.116-1.958 2.042-3.194 2.312-.846.18-1.95.324-5.668-1.218-4.762-1.972-7.828-6.81-8.064-7.126-.228-.316-1.912-2.548-1.912-4.862s1.212-3.45 1.642-3.924c.396-.434.924-.596 1.216-.596.15 0 .284.008.406.014.43.018.646.042.93.722.354.85 1.218 2.97 1.324 3.188.108.218.216.514.066.81-.142.304-.268.44-.486.69-.218.25-.426.44-.644.71-.2.234-.424.484-.18.928.244.442 1.084 1.786 2.328 2.894 1.598 1.424 2.944 1.866 3.364 2.072.42.206.666.172.91-.104.25-.284 1.066-1.242 1.35-1.67.278-.428.562-.356.946-.214.388.142 2.458 1.16 2.878 1.372.42.214.7.318.802.498.1.18.1 1.044-.296 2.16z"/></svg>
+</a>
+
+<footer class="blog-footer">
+    <p>&copy; 2026 David Licence Consulting. All rights reserved. | <a href="../index.html">Home</a> | <a href="../index.html#contact">Contact Us</a></p>
+</footer>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-switcher button').forEach(btn => btn.classList.remove('active'));
+    document.getElementById('content-' + lang).classList.add('active');
+    const labels = { 'en': 'EN', 'zh-hant': '繁', 'zh-hans': '简' };
+    document.querySelectorAll('.lang-switcher button').forEach(btn => {
+        if (btn.textContent.trim() === labels[lang]) btn.classList.add('active');
+    });
+    document.documentElement.lang = lang === 'zh-hant' ? 'zh-Hant' : lang === 'zh-hans' ? 'zh-Hans' : 'en';
+}
+</script>
+<script src="../js/main.js"></script>
+</body>
+</html>
