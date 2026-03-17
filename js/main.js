@@ -11,6 +11,7 @@
      1. LANGUAGE SWITCHER
      Supports 'en' (English), 'tc' (Traditional Chinese), 'sc' (Simplified Chinese).
      Elements use data-lang="en|tc|sc" to declare which language they belong to.
+     Buttons use data-lang-switch="en|tc|sc" to trigger language change.
      ========================================================================== */
 
   const LANG_KEY = 'dlc-lang';
@@ -30,9 +31,13 @@
     document.documentElement.lang = lang === 'tc' ? 'zh-Hant' : lang === 'sc' ? 'zh-Hans' : 'en';
 
     // Show / hide translatable elements
+    // Only target elements whose data-lang value is a language code (not lang-switch or other prefixed attrs)
     document.querySelectorAll('[data-lang]').forEach(function (el) {
-      // An element may declare multiple langs: data-lang="en tc"
-      const langs = el.getAttribute('data-lang').split(/\s+/);
+      // Skip language switcher buttons (they have data-lang-switch, but also might
+      // accidentally match if they have data-lang too). We only want content elements.
+      if (el.hasAttribute('data-lang-switch')) return;
+
+      var langs = el.getAttribute('data-lang').split(/\s+/);
       if (langs.includes(lang)) {
         el.style.display = '';
         el.removeAttribute('hidden');
@@ -42,10 +47,10 @@
       }
     });
 
-    // Update active state on language-switcher buttons
-    document.querySelectorAll('[data-set-lang]').forEach(function (btn) {
-      btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
-      btn.setAttribute('aria-pressed', btn.getAttribute('data-set-lang') === lang);
+    // Update active state on language-switcher buttons (data-lang-switch)
+    document.querySelectorAll('[data-lang-switch]').forEach(function (btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-lang-switch') === lang);
+      btn.setAttribute('aria-pressed', btn.getAttribute('data-lang-switch') === lang);
     });
   }
 
@@ -67,12 +72,12 @@
 
   /** Initialise language switcher: bind buttons & apply saved language. */
   function initLanguageSwitcher() {
-    // Event delegation on document for language buttons
+    // Event delegation on document for language buttons (data-lang-switch)
     document.addEventListener('click', function (e) {
-      var btn = e.target.closest('[data-set-lang]');
+      var btn = e.target.closest('[data-lang-switch]');
       if (!btn) return;
       e.preventDefault();
-      setLanguage(btn.getAttribute('data-set-lang'));
+      setLanguage(btn.getAttribute('data-lang-switch'));
     });
 
     // Apply saved / detected language on load
@@ -81,11 +86,11 @@
 
   /* ==========================================================================
      2. STICKY HEADER
-     Adds .scrolled class to <header> after scrolling past 50 px.
+     Adds .scrolled class to .site-header / #siteHeader after scrolling past 50 px.
      ========================================================================== */
 
   function initStickyHeader() {
-    var header = document.querySelector('header');
+    var header = document.getElementById('siteHeader') || document.querySelector('.site-header');
     if (!header) return;
 
     var threshold = 50;
@@ -109,11 +114,12 @@
   /* ==========================================================================
      3. MOBILE MENU
      Toggle nav, close on link click, close on outside click, lock body scroll.
+     Uses #mobileMenuToggle / .mobile-menu-toggle and #mainNav / .main-nav.
      ========================================================================== */
 
   function initMobileMenu() {
-    var toggle = document.querySelector('.mobile-menu-toggle, .hamburger, [data-menu-toggle]');
-    var nav = document.querySelector('.mobile-nav, .nav-menu, [data-mobile-nav]');
+    var toggle = document.getElementById('mobileMenuToggle') || document.querySelector('.mobile-menu-toggle');
+    var nav = document.getElementById('mainNav') || document.querySelector('.main-nav');
     if (!toggle || !nav) return;
 
     var isOpen = false;
@@ -121,7 +127,7 @@
     function openMenu() {
       isOpen = true;
       nav.classList.add('open');
-      toggle.classList.add('active');
+      toggle.classList.add('open');
       toggle.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
     }
@@ -129,7 +135,7 @@
     function closeMenu() {
       isOpen = false;
       nav.classList.remove('open');
-      toggle.classList.remove('active');
+      toggle.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     }
@@ -207,7 +213,8 @@
 
   /* ==========================================================================
      5. FAQ ACCORDION
-     Only one answer open at a time. Smooth height transition. Icon rotation.
+     Only one answer open at a time. Smooth max-height transition.
+     Uses .faq-item.active (NOT .open) to match CSS styling.
      ========================================================================== */
 
   function initFAQAccordion() {
@@ -225,12 +232,12 @@
       var answer = item.querySelector('.faq-answer, [data-faq-answer]');
       if (!answer) return;
 
-      var isOpen = item.classList.contains('open');
+      var isActive = item.classList.contains('active');
 
-      // Close all other open items
-      faqContainer.querySelectorAll('.faq-item.open, [data-faq-item].open').forEach(function (openItem) {
+      // Close all other open items (using .active class)
+      faqContainer.querySelectorAll('.faq-item.active, [data-faq-item].active').forEach(function (openItem) {
         if (openItem === item) return;
-        openItem.classList.remove('open');
+        openItem.classList.remove('active');
         var openAnswer = openItem.querySelector('.faq-answer, [data-faq-answer]');
         if (openAnswer) {
           openAnswer.style.maxHeight = null;
@@ -241,22 +248,22 @@
       });
 
       // Toggle clicked item
-      if (isOpen) {
-        item.classList.remove('open');
+      if (isActive) {
+        item.classList.remove('active');
         answer.style.maxHeight = null;
       } else {
-        item.classList.add('open');
+        item.classList.add('active');
         answer.style.maxHeight = answer.scrollHeight + 'px';
       }
 
       // Toggle icon rotation
       var icon = item.querySelector('.faq-icon, [data-faq-icon]');
-      if (icon) icon.classList.toggle('rotated', !isOpen);
+      if (icon) icon.classList.toggle('rotated', !isActive);
     });
 
     // Recalculate max-height on window resize (content may reflow)
     window.addEventListener('resize', debounce(function () {
-      var openAnswer = faqContainer.querySelector('.faq-item.open .faq-answer, [data-faq-item].open [data-faq-answer]');
+      var openAnswer = faqContainer.querySelector('.faq-item.active .faq-answer, [data-faq-item].active [data-faq-answer]');
       if (openAnswer) {
         openAnswer.style.maxHeight = openAnswer.scrollHeight + 'px';
       }
@@ -270,8 +277,11 @@
      ========================================================================== */
 
   function initSmoothScroll() {
-    var header = document.querySelector('header');
-    var headerOffset = header ? header.offsetHeight : 0;
+    var header = document.getElementById('siteHeader') || document.querySelector('.site-header');
+
+    function getHeaderOffset() {
+      return header ? header.offsetHeight : 0;
+    }
 
     // Smooth scroll for anchor links
     document.addEventListener('click', function (e) {
@@ -286,9 +296,7 @@
 
       e.preventDefault();
 
-      // Recalculate in case header height changed
-      headerOffset = header ? header.offsetHeight : 0;
-
+      var headerOffset = getHeaderOffset();
       var top = target.getBoundingClientRect().top + window.scrollY - headerOffset - 16;
 
       window.scrollTo({
@@ -305,7 +313,7 @@
     var ticking = false;
 
     function updateActiveLink() {
-      headerOffset = header ? header.offsetHeight : 0;
+      var headerOffset = getHeaderOffset();
       var scrollPos = window.scrollY + headerOffset + 50;
 
       var currentId = '';
@@ -443,13 +451,12 @@
 
       var suffix = (el.getAttribute('data-count-suffix') || '').trim();
       var duration = 2000; // ms
-      var start = 0;
       var startTime = null;
 
       function step(timestamp) {
         if (!startTime) startTime = timestamp;
         var progress = Math.min((timestamp - startTime) / duration, 1);
-        // Ease-out quad
+        // Ease-out cubic
         var easedProgress = 1 - Math.pow(1 - progress, 3);
         var current = Math.floor(easedProgress * target);
 
@@ -550,10 +557,39 @@
   }
 
   /* ==========================================================================
-     12. BLOG PAGE FEATURES
+     12. BACK TO TOP BUTTON
+     Shows/hides the #backToTop button based on scroll position.
+     Smooth-scrolls to top on click.
+     ========================================================================== */
+
+  function initBackToTop() {
+    var backToTop = document.getElementById('backToTop') || document.querySelector('.back-to-top');
+    if (!backToTop) return;
+
+    var ticking = false;
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          backToTop.classList.toggle('visible', window.scrollY > 400);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Set initial state
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  }
+
+  /* ==========================================================================
+     13. BLOG PAGE FEATURES
      - Table of contents generated from headings
      - Reading progress bar
-     - Back to top button
      ========================================================================== */
 
   function initBlogPage() {
@@ -595,7 +631,7 @@
         window.addEventListener('scroll', function () {
           if (!tocTicking) {
             window.requestAnimationFrame(function () {
-              var header = document.querySelector('header');
+              var header = document.getElementById('siteHeader') || document.querySelector('.site-header');
               var offset = (header ? header.offsetHeight : 0) + 60;
               var currentId = '';
 
@@ -645,32 +681,6 @@
         readTicking = true;
       }
     }, { passive: true });
-
-    // ---- Back to Top Button ----
-    var backToTop = document.querySelector('.back-to-top, [data-back-to-top]');
-    if (!backToTop) {
-      backToTop = document.createElement('button');
-      backToTop.className = 'back-to-top';
-      backToTop.setAttribute('aria-label', 'Back to top');
-      backToTop.innerHTML = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 16V4M4 10l6-6 6 6"/></svg>';
-      document.body.appendChild(backToTop);
-    }
-
-    var bttTicking = false;
-
-    window.addEventListener('scroll', function () {
-      if (!bttTicking) {
-        window.requestAnimationFrame(function () {
-          backToTop.classList.toggle('visible', window.scrollY > 400);
-          bttTicking = false;
-        });
-        bttTicking = true;
-      }
-    }, { passive: true });
-
-    backToTop.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
   }
 
   /* ==========================================================================
@@ -712,7 +722,8 @@
     initCounterAnimation();   // 9
     initScrollProgress();     // 10
     initPageLoad();           // 11
-    initBlogPage();           // 12
+    initBackToTop();          // 12
+    initBlogPage();           // 13
   }
 
   // Run on DOMContentLoaded if not already fired, otherwise run immediately
