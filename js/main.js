@@ -52,6 +52,9 @@
       btn.classList.toggle('active', btn.getAttribute('data-lang-switch') === lang);
       btn.setAttribute('aria-pressed', btn.getAttribute('data-lang-switch') === lang);
     });
+
+    // Dispatch custom event so other widgets (e.g. estimator) can react
+    document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: lang } }));
   }
 
   /** Read stored language or fall back to browser language then 'en'. */
@@ -429,7 +432,7 @@
      ========================================================================== */
 
   function initCounterAnimation() {
-    var counters = document.querySelectorAll('.counter, [data-count]');
+    var counters = document.querySelectorAll('.counter, .stat-number, [data-count]');
     if (!counters.length) return;
 
     if (!('IntersectionObserver' in window)) {
@@ -706,6 +709,93 @@
   }
 
   /* ==========================================================================
+     14. LICENCE ESTIMATOR WIDGET
+     Populates timeline, capital and requirements cards based on licence type
+     selection. Responds to language changes via the 'languageChanged' event.
+     ========================================================================== */
+
+  function initEstimator() {
+    var select = document.getElementById('estimatorSelect');
+    if (!select) return;
+
+    var data = {
+      'type1': {
+        timeline: { en: '4–6 months', tc: '4至6個月', sc: '4至6个月' },
+        capital: { en: 'HK$5M paid-up + HK$3M liquid', tc: '實繳股本500萬 + 速動資金300萬港元', sc: '实缴股本500万 + 速动资金300万港元' },
+        requirements: { en: 'Min. 2 ROs, compliance manual, business plan, AML/CFT policies', tc: '至少2名RO、合規手冊、商業計劃書、反洗錢政策', sc: '至少2名RO、合规手册、商业计划书、反洗钱政策' }
+      },
+      'type4': {
+        timeline: { en: '3–5 months', tc: '3至5個月', sc: '3至5个月' },
+        capital: { en: 'HK$5M paid-up + HK$3M liquid', tc: '實繳股本500萬 + 速動資金300萬港元', sc: '实缴股本500万 + 速动资金300万港元' },
+        requirements: { en: 'Min. 2 ROs, research & advisory framework, compliance setup', tc: '至少2名RO、研究及諮詢框架、合規設置', sc: '至少2名RO、研究及咨询框架、合规设置' }
+      },
+      'type6': {
+        timeline: { en: '4–6 months', tc: '4至6個月', sc: '4至6个月' },
+        capital: { en: 'HK$5M paid-up + HK$3M liquid', tc: '實繳股本500萬 + 速動資金300萬港元', sc: '实缴股本500万 + 速动资金300万港元' },
+        requirements: { en: 'Min. 2 ROs, corporate finance advisory procedures, compliance manual', tc: '至少2名RO、機構融資諮詢程序、合規手冊', sc: '至少2名RO、机构融资咨询程序、合规手册' }
+      },
+      'type9': {
+        timeline: { en: '4–8 months', tc: '4至8個月', sc: '4至8个月' },
+        capital: { en: 'HK$5M paid-up + HK$3M liquid (HK$100K if no client assets)', tc: '實繳股本500萬 + 速動資金300萬（不持客戶資產則10萬港元）', sc: '实缴股本500万 + 速动资金300万（不持客户资产则10万港元）' },
+        requirements: { en: 'Min. 2 ROs, investment strategy docs, risk management framework, business plan', tc: '至少2名RO、投資策略文件、風險管理框架、商業計劃書', sc: '至少2名RO、投资策略文件、风险管理框架、商业计划书' }
+      },
+      'ia-broker': {
+        timeline: { en: '3–6 months', tc: '3至6個月', sc: '3至6个月' },
+        capital: { en: 'HK$500K paid-up capital + PII insurance', tc: '實繳股本50萬港元 + 專業彌償保險', sc: '实缴股本50万港元 + 专业弥偿保险' },
+        requirements: { en: 'Chief Executive, min. 1 RO, 2+ Technical Representatives, IIQE exams', tc: '行政總裁、至少1名RO、2名以上技術代表、IIQE考試', sc: '行政总裁、至少1名RO、2名以上技术代表、IIQE考试' }
+      }
+    };
+
+    var timelineEl = document.getElementById('estTimeline');
+    var capitalEl = document.getElementById('estCapital');
+    var requirementsEl = document.getElementById('estRequirements');
+
+    var resultsContainer = document.getElementById('estimatorResults');
+
+    function updateEstimator() {
+      var key = select.value;
+      if (!key || !data[key]) return;
+      var d = data[key];
+      var lang = getSavedLanguage();
+
+      if (timelineEl) timelineEl.textContent = d.timeline[lang] || d.timeline.en;
+      if (capitalEl) capitalEl.textContent = d.capital[lang] || d.capital.en;
+      if (requirementsEl) requirementsEl.textContent = d.requirements[lang] || d.requirements.en;
+
+      if (resultsContainer) resultsContainer.style.display = '';
+    }
+
+    select.addEventListener('change', updateEstimator);
+    // Also update when language changes
+    document.addEventListener('languageChanged', updateEstimator);
+    // Initial
+    updateEstimator();
+  }
+
+  /* ==========================================================================
+     15. MOBILE STICKY BAR LANGUAGE BUTTONS
+     Ensures .mobile-lang-btn elements with data-lang-switch trigger the
+     language switcher. (The main event delegation in initLanguageSwitcher
+     already handles [data-lang-switch] clicks, but this adds explicit
+     support for .mobile-lang-btn styling and active-state toggling.)
+     ========================================================================== */
+
+  function initMobileStickyBarLang() {
+    var mobileLangBtns = document.querySelectorAll('.mobile-lang-btn[data-lang-switch]');
+    if (!mobileLangBtns.length) return;
+
+    // The click handling is already covered by the document-level delegation
+    // in initLanguageSwitcher. Here we ensure the active class is kept in sync.
+    document.addEventListener('languageChanged', function (e) {
+      var lang = e.detail && e.detail.lang;
+      if (!lang) return;
+      mobileLangBtns.forEach(function (btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-lang-switch') === lang);
+      });
+    });
+  }
+
+  /* ==========================================================================
      INIT
      Boot everything when the DOM is ready.
      ========================================================================== */
@@ -724,6 +814,8 @@
     initPageLoad();           // 11
     initBackToTop();          // 12
     initBlogPage();           // 13
+    initEstimator();          // 14
+    initMobileStickyBarLang(); // 15
   }
 
   // Run on DOMContentLoaded if not already fired, otherwise run immediately
